@@ -1,0 +1,34 @@
+body {
+    padding-top: 50px;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.navbar a{
+    color:white;
+}
+
+.nav.navbar-nav a:hover{
+    background-color: #519CD0;
+}
+
+.footer{
+    background-color: black;
+    padding:25px 0;
+    color:white;
+}
+
+.starter-template {
+    padding:15px 0;
+}
+
+.pulse-logo img{
+    max-width: 100%;
+}
+
+.pulse-logo{
+    width:500px;
+    margin:auto;
+}
