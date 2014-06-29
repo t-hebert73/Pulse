@@ -1,0 +1,93 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar{
+  background-color: black;
+  border-bottom: 5px solid $lightblue;
+
+  a{
+    color:white;
+  }
+}
+
+.navbar-brand{
+  padding:8px 0px 0px 15px;
+}
+
+
+.nav.navbar-nav a:hover{
+  background-color: $lightblue;
+}
+
+.logo{
+  width:40px;
+  height:37px;
+}
+
+.band-name{
+  display: inline-block;
+  margin:0px 10px;
+}
+
+.navbar-toggle{
+  background-color: $lightblue;
+}
+
+.navbar-collapse{
+  float: left;
+
+  a{
+    text-align: center;
+  }
+}
+
+.icon-bar{
+  background-color: white;
+}
+
+.footer{
+  background-color: black;
+  padding:25px 0;
+  color:white;
+}
+
+.starter-template {
+  padding:15px 0;
+}
+
+.pulse-logo{
+  width:500px;
+  margin:auto;
+
+  img{
+    max-width: 100%;
+  }
+}
+
+.button.blue{
+  @include background_gradient($lightblue,$lightblue);
+  color:white;
+  border:1px solid black;
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+.mainbar{
+
+}
+
+.sidebar{
+
+}
+
+.contact-container, .twitter-feed-container{
+  margin-top:15px;
+  border:2px solid black;
+  padding:0px 15px 15px;
+  text-align: center;
+  @include box-shadow(0 0 15px #888);
+}
+

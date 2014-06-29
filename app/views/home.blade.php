@@ -2,13 +2,32 @@
 
 @section('content')
 
-<div class="starter-template">
-
-    <div class="pulse-logo">
-        <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
+<div class="row">
+    <div class="mainbar col-md-9">
+        <div class="starter-template">
+            <div class="pulse-logo">
+                <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
+            </div>
+        </div>
     </div>
 
+    <div class="sidebar col-md-3">
+
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+
+            <p>Contact us to book a gig.</p>
+
+            <a href="contact" class="button blue btn">Contact Us</a>
+        </div>
+
+        <div class="twitter-feed-container">
+            <h2>Twitter Feed</h2>
+        </div>
+
+    </div>
 </div>
+
 
 
 @stop

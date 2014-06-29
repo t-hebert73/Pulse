@@ -1,0 +1,47 @@
+body {
+  padding-top: 50px; }
+
+.navbar {
+  background-color: black;
+  border-bottom: 5px solid #519CD0; }
+  .navbar a {
+    color: white; }
+
+.navbar-brand {
+  padding: 8px 0px 0px 15px; }
+
+.nav.navbar-nav a:hover {
+  background-color: #519CD0; }
+
+.logo {
+  width: 40px;
+  height: 37px; }
+
+.band-name {
+  display: inline-block;
+  margin: 0px 10px; }
+
+.navbar-toggle {
+  background-color: #519CD0; }
+
+.navbar-collapse {
+  float: left; }
+  .navbar-collapse a {
+    text-align: center; }
+
+.icon-bar {
+  background-color: white; }
+
+.footer {
+  background-color: black;
+  padding: 25px 0;
+  color: white; }
+
+.starter-template {
+  padding: 15px 0; }
+
+.pulse-logo {
+  width: 500px;
+  margin: auto; }
+  .pulse-logo img {
+    max-width: 100%; }
