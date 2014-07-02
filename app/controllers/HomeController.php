@@ -1,6 +1,6 @@
 <?php
 
-class MainController extends BaseController {
+class HomeController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -15,6 +15,12 @@ class MainController extends BaseController {
 	|
 	*/
 
+    public function showHome(){
 
+        //grab tweets and pass to view
+        $twitterObject = new TwitterHandler();
+        $twitter = $twitterObject->getTweets();
+        return View::make('home')->with('objects', $twitter);
+    }
 
 }
