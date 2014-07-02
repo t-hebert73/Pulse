@@ -80,7 +80,7 @@ body {
 }
 
 .sidebar{
-
+  margin-bottom: 25px;
 }
 
 .contact-container, .twitter-feed-container{
@@ -89,5 +89,14 @@ body {
   padding:0px 15px 15px;
   text-align: center;
   @include box-shadow(0 0 15px #888);
+}
+
+.twitter-feed-container{
+  .tweet{
+    padding:5px 0px;
+    border-top:1px solid #00ABED;
+    border-bottom:1px solid #00ABED;
+    margin-bottom:15px;
+  }
 }
 

@@ -61,6 +61,9 @@ body {
 .button:hover {
   opacity: 0.8; }
 
+.sidebar {
+  margin-bottom: 25px; }
+
 .contact-container, .twitter-feed-container {
   margin-top: 15px;
   border: 2px solid black;
@@ -69,3 +72,9 @@ body {
   -webkit-box-shadow: 0 0 15px #888888;
   -moz-box-shadow: 0 0 15px #888888;
   box-shadow: 0 0 15px #888888; }
+
+.twitter-feed-container .tweet {
+  padding: 5px 0px;
+  border-top: 1px solid #00ABED;
+  border-bottom: 1px solid #00ABED;
+  margin-bottom: 15px; }
