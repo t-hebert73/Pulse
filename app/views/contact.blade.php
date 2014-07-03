@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="container">
 <div class="starter-template">
 
     <h1>Contact Us</h1>
@@ -21,6 +22,6 @@
 
     </form>
 </div>
-
+</div>
 
 @stop

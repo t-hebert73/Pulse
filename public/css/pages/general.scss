@@ -1,10 +1,12 @@
 body {
-  padding-top: 50px;
+  padding-top: 100px;
+
+  font-size:16px;
 }
 
 .navbar{
   background-color: black;
-  border-bottom: 5px solid $lightblue;
+  border-bottom: 10px solid $lightblue;
 
   a{
     color:white;
@@ -12,7 +14,8 @@ body {
 }
 
 .navbar-brand{
-  padding:8px 0px 0px 15px;
+  height: auto;
+  padding:0px 15px;
 }
 
 
@@ -21,13 +24,7 @@ body {
 }
 
 .logo{
-  width:40px;
-  height:37px;
-}
-
-.band-name{
-  display: inline-block;
-  margin:0px 10px;
+  height:90px;
 }
 
 .navbar-toggle{
@@ -37,8 +34,13 @@ body {
 .navbar-collapse{
   float: left;
 
-  a{
-    text-align: center;
+  .nav.navbar-nav{
+    li{
+      a{
+        text-align: center;
+        padding:35px 25px;
+      }
+    }
   }
 }
 
@@ -83,7 +85,16 @@ body {
   margin-bottom: 25px;
 }
 
-.contact-container, .twitter-feed-container{
+.contact-container{
+  float: right;
+  margin-top:30px;
+
+  a.button{
+    font-size:16px;
+  }
+}
+
+.twitter-feed-container{
   margin-top:15px;
   border:2px solid black;
   padding:0px 15px 15px;
@@ -98,5 +109,63 @@ body {
     border-bottom:1px solid #00ABED;
     margin-bottom:15px;
   }
+}
+
+.topbar{
+  background-image:url('../images/darkpattern.png');
+
+  .container{
+    padding-top:25px;
+  }
+}
+
+.flexslider{
+  li{
+
+    .image{
+      float: left;
+      width:35%;
+
+      img{
+        border:3px solid white;
+        height:100%;
+        max-width: 100%;
+      }
+    }
+    .promo-container{
+      width:65%;
+      float: left;
+      color:white;
+
+      .content{
+        padding:25px;
+
+        .promo-title{
+          margin-top:0px;
+          margin-bottom:20px;
+        }
+
+        .promo{
+          margin-bottom: 55px;
+        }
+
+        .venue-container{
+          float: left;
+        }
+
+        .attendance-container{
+          float: right;
+        }
+      }
+    }
+  }
+
+  .flex-control-nav{
+    display: none;
+  }
+}
+
+.clear{
+  clear:both;
 }
 

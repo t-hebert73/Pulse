@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="container">
 <div class=starter-template">
 
     <h1 style="text-align:center">About the band</h1>
@@ -35,6 +36,7 @@
 
         </div>
     </div>
+</div>
 </div>
 
 @stop

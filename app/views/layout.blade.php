@@ -17,6 +17,20 @@
     <![endif]-->
     <link href="/css/main.css" rel="stylesheet">
 
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="/css/vendor/flexslider/flexslider.css" type="text/css">
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Flexslider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="../packages/jquery.flexslider.js"></script>
+
 </head>
 <body>
 
@@ -30,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="/"><img class="logo" src="images/placeholderlogo.png" /><div class="band-name">Pulse</div></a>
+            <a class="navbar-brand" href="/"><img class="logo" src="images/placeholderlogo.png" /></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -39,14 +53,14 @@
                 <li><a href="contact">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
+
+        <div class="contact-container">
+            <a href="contact" class="button blue btn">Book A Gig</a>
+        </div>
     </div>
 </div>
 
-<div class="container">
-
     @yield('content')
-
-</div><!-- /.container -->
 
 <footer class="footer">
     <div class="container">
@@ -54,12 +68,6 @@
     </div>
 </footer>
 
-<!-- jQuery -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 
 
