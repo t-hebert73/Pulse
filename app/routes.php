@@ -21,11 +21,5 @@ Route::get('theband', function()
     return View::make('theband');
 });
 
-Route::get('aboutus', function()
-{
-    return View::make('aboutus');
-});
-
-
 Route::get('/','HomeController@showHome');
 

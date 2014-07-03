@@ -82,7 +82,11 @@ body {
   border-bottom: 1px solid #00ABED;
   margin-bottom: 15px; }
 
-.splitter {
-    border-right: 1px dashed #333;
-    margin-bottom: 15;
+.band-border {
+    padding: 3px 0px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px #888888;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
