@@ -37,6 +37,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="theband">The Band</a></li>
                 <li><a href="contact">Contact</a></li>
+                <li><a href="aboutus">About Us</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

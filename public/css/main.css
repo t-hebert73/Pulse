@@ -35,10 +35,13 @@ body {
 .footer {
   background-color: black;
   padding: 25px 0;
-  color: white; }
+  color: white;
+  margin-top: 15px;
+}
 
 .starter-template {
-  padding: 15px 0; }
+  padding: 15px 0;
+}
 
 .pulse-logo {
   width: 500px;
@@ -78,3 +81,8 @@ body {
   border-top: 1px solid #00ABED;
   border-bottom: 1px solid #00ABED;
   margin-bottom: 15px; }
+
+.splitter {
+    border-right: 1px dashed #333;
+    margin-bottom: 15;
+}
