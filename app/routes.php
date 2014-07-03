@@ -21,5 +21,10 @@ Route::get('theband', function()
     return View::make('theband');
 });
 
+Route::get('media', function()
+{
+    return View::make('media');
+});
+
 Route::get('/','HomeController@showHome');
 
