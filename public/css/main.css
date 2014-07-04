@@ -1,6 +1,10 @@
 body {
   padding-top: 100px;
   font-size: 16px; }
+  body p, body div, body span {
+    font-family: 'Roboto', sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Droid Sans', sans-serif; }
 
 .navbar {
   background-color: black;
@@ -39,7 +43,7 @@ body {
   padding: 15px 0; }
 
 .pulse-logo {
-  width: 500px;
+  width: 370px;
   margin: auto; }
   .pulse-logo img {
     max-width: 100%; }
@@ -60,16 +64,20 @@ body {
   opacity: 0.8; }
 
 .sidebar {
-  margin-bottom: 25px; }
+  margin: 25px 0; }
 
 .contact-container {
-  float: right;
-  margin-top: 30px; }
+  float: right; }
+  .contact-container .email {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px; }
   .contact-container a.button {
-    font-size: 16px; }
+    font-size: 16px;
+    float: right;
+    margin-top: 10px; }
 
 .twitter-feed-container {
-  margin-top: 15px;
   border: 2px solid black;
   padding: 0px 15px 15px;
   text-align: center;
@@ -115,3 +123,52 @@ body {
 
 .clear {
   clear: both; }
+
+.page-title {
+  margin-bottom: 25px; }
+
+.upcoming-shows-container {
+  border-radius: 5px; }
+  .upcoming-shows-container .shows-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url("../images/darkpattern.png"); }
+    .upcoming-shows-container .shows-header .content {
+      font-size: 20px; }
+  .upcoming-shows-container .show.last {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .upcoming-shows-container .show, .upcoming-shows-container .shows-header {
+    color: white; }
+    .upcoming-shows-container .show .venue, .upcoming-shows-container .show .location, .upcoming-shows-container .show .date, .upcoming-shows-container .show .time, .upcoming-shows-container .shows-header .venue, .upcoming-shows-container .shows-header .location, .upcoming-shows-container .shows-header .date, .upcoming-shows-container .shows-header .time {
+      display: inline-block;
+      margin-right: -3px;
+      font-size: 14px;
+      text-align: center; }
+    .upcoming-shows-container .show .venue, .upcoming-shows-container .shows-header .venue {
+      width: 25%; }
+    .upcoming-shows-container .show .location, .upcoming-shows-container .shows-header .location {
+      width: 35%; }
+    .upcoming-shows-container .show .date, .upcoming-shows-container .shows-header .date {
+      width: 20%; }
+    .upcoming-shows-container .show .time, .upcoming-shows-container .shows-header .time {
+      width: 20%; }
+    .upcoming-shows-container .show .content, .upcoming-shows-container .shows-header .content {
+      padding: 15px; }
+  .upcoming-shows-container .show:nth-child(even) {
+    background-image: url("../images/darkpattern.png"); }
+  .upcoming-shows-container .show:nth-child(odd) {
+    background-image: url("../images/tweedpattern.png"); }
+
+.past-shows-container {
+  text-align: center;
+  background-image: url("../images/darkpattern.png");
+  color: white;
+  padding-top: 1px; }
+  .past-shows-container .show {
+    padding: 15px 15px 25px;
+    border-bottom: 1px solid white; }
+    .past-shows-container .show .date {
+      float: left; }
+    .past-shows-container .show .time {
+      float: right; }

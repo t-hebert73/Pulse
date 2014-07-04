@@ -26,5 +26,10 @@ Route::get('media', function()
     return View::make('media');
 });
 
+Route::get('shows', function()
+{
+    return View::make('shows');
+});
+
 Route::get('/','HomeController@showHome');
 

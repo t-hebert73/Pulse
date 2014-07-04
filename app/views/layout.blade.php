@@ -9,6 +9,10 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,700italic,500italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,12 +54,14 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="theband">The Band</a></li>
+                <li><a href="shows">Shows</a></li>
                 <li><a href="media">Media</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
 
         <div class="contact-container">
+            <div class="email">pulsebandinfo1@gmail.com</div>
             <a href="contact" class="button blue btn">Book A Gig</a>
         </div>
     </div>

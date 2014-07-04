@@ -80,7 +80,7 @@
 <div class="container">
 
 <div class="row">
-    <div class="mainbar col-md-9">
+    <div class="mainbar col-md-8">
         <div class="starter-template">
             <div class="pulse-logo">
                 <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="sidebar col-md-3">
+    <div class="sidebar col-md-4">
 
         <div class="twitter-feed-container">
             <h2>Twitter Feed</h2>
