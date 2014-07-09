@@ -5,23 +5,34 @@
 <div class="container">
 <div class="starter-template">
 
-    <h1>Contact Us</h1>
+    <h3>Contact Us</h3>
 
-    <p>Try and send the form, I dare you.</p>
-
-    <form role="form" class="contact form-horizontal">
-        <div class="form-group">
-            <label>Name: </label>
-            <input type="text" class="form-control" placeholder="Name">
-
-        </div>
-        <div class="form-group">
-            <label>Comments:</label>
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
-
-    </form>
+    {{ Form::open(array('url' => 'contact')) }}
+    <table>
+        <tr>
+            <td>{{ Form::label('name', 'Name') }}</td>
+            <td>{{ Form::text('name', '') }}</td>
+        </tr>
+        <tr>
+            <td>{{ Form::label('email', 'Email') }}</td>
+            <td>{{ Form::text('email', '') }}</td>
+        </tr>
+        <tr>
+            <td>{{ Form::label('subject', 'Subject') }}</td>
+            <td>{{ Form::text('subject', '') }}</td>
+        </tr>
+        <tr>
+            <td>{{ Form::label('msg', 'Message') }}</td>
+            <td>{{ Form::textarea('msg', '') }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>{{ Form::submit('Submit', array('class' => 'btn btn-large btn-primary')) }}</td>
+        </tr>
+    {{ Form::close() }}
+    </table>
 </div>
 </div>
 
 @stop
+

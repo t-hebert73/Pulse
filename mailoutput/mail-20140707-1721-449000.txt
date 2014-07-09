@@ -1,0 +1,18 @@
+To: Pulse Band <Pulsebandinfo1@gmail.com>
+Subject: Message Recieved
+Message-ID: <aeb7c6c01ba97e2697904644f4e17b31@localhost>
+Date: Mon, 07 Jul 2014 17:21:54 +0000
+From: Max <max.saglimbeni@hotmail.com>
+Cc: Pulsebandinfo1@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h1>We been contacted by.... </h1>
+
+<p>
+    First name: Max    Last name: Saglimbeni    Phone number: 2899692291   =
+ Email address: max.saglimbeni@hotmail.com    Subject: 1    Message: Testin=
+gTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTest=
+ing    Date: July 7, 2014, 5:21 pm    User IP address: ::1
+</p>
