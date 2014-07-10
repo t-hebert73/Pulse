@@ -35,6 +35,8 @@ Route::post('contact', function() {
 
         $message->subject($subject);
     });
+
+    return Redirect::to('/contact');
 });
 
 Route::get('theband', function()
