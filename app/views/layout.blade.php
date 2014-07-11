@@ -35,6 +35,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="../packages/jquery.flexslider.js"></script>
 
+    <!-- jPlayer -->
+    <link type="text/css" href="/css/vendor/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jplayer/jquery.jplayer.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        title: "Bubble",
+                        m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+                        oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+                    });
+                },
+                swfPath: "/js/jplayer",
+                supplied: "m4a, oga"
+            });
+        });
+    </script>
+
 </head>
 <body>
 
