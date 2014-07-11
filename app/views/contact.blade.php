@@ -11,19 +11,25 @@
     <table>
         <tr>
             <td>{{ Form::label('name', 'Name') }}</td>
-            <td>{{ Form::text('name', '') }}</td>
+            <td>{{ Form::text('name', ' ')   }} <?php echo $errors->first('name');?></td>
         </tr>
         <tr>
             <td>{{ Form::label('email', 'Email') }}</td>
-            <td>{{ Form::text('email', '') }}</td>
-        </tr>
-        <tr>
-            <td>{{ Form::label('subject', 'Subject') }}</td>
-            <td>{{ Form::text('subject', '') }}</td>
+            <td>{{ Form::text('email', ' ') }} <?php
+                foreach($errors->get('email') as $message)
+                {
+                    echo $message;
+                }
+                ?></td>
         </tr>
         <tr>
             <td>{{ Form::label('msg', 'Message') }}</td>
-            <td>{{ Form::textarea('msg', '') }}</td>
+            <td>{{ Form::textarea('msg', ' ') }} <?php
+                    foreach($errors->get('msg') as $message)
+                    {
+                        echo $message;
+                    }
+                ?> </td>
         </tr>
         <tr>
             <td></td>
