@@ -94,30 +94,19 @@
     <div class="sidebar col-md-4">
 
         <div class="twitter-feed-container">
-            <h2>Twitter Feed</h2>
-            <?php
-                //catch the twitter object from controller
-                $twitter = $objects;
+            <a class="twitter-timeline" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-                foreach($twitter as $tweet){
-                    echo '<div class="tweet">';
-                    echo $tweet->text;
-                    echo '</div>';
-                }
 
-            ?>
+
         </div>
 
-    </div>
 
-    <div class="test col-md-12">
-       <!--<pre>
-           <?php print_r($twitter); ?>
-       </pre>
-       -->
 
 
     </div>
+
+
 </div>
 </div>
 

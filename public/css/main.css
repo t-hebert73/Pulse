@@ -79,18 +79,9 @@ body {
     margin-top: 10px; }
 
 .twitter-feed-container {
-  border: 2px solid black;
-  padding: 0px 15px 15px;
-  text-align: center;
   -webkit-box-shadow: 0 0 15px #888888;
   -moz-box-shadow: 0 0 15px #888888;
   box-shadow: 0 0 15px #888888; }
-
-.twitter-feed-container .tweet {
-  padding: 5px 0px;
-  border-top: 1px solid #00ABED;
-  border-bottom: 1px solid #00ABED;
-  margin-bottom: 15px; }
 
 .topbar {
   background-image: url("../images/darkpattern.png"); }
@@ -173,3 +164,36 @@ body {
       float: left; }
     .past-shows-container .show .time {
       float: right; }
+
+/*
+* Media Page
+*/
+.song-container {
+  margin-bottom: 15px; }
+  .song-container .song-info {
+    float: left;
+    width: 40%;
+    background-image: url("../images/darkpattern.png");
+    color: white; }
+    .song-container .song-info .content {
+      text-align: center;
+      padding: 10px; }
+  .song-container .jp-audio {
+    float: left; }
+    .song-container .jp-audio .jp-details {
+      display: none; }
+
+.recording-info-container {
+  text-align: center;
+  background-image: url("../images/darkpattern.png");
+  color: white;
+  padding: 15px 0px; }
+  .recording-info-container h2 {
+    margin-bottom: 35px; }
+  .recording-info-container .image-container {
+    margin: 0px 25px 25px;
+    border: 3px solid white; }
+    .recording-info-container .image-container img {
+      max-width: 100%; }
+  .recording-info-container .content {
+    padding: 0px 15px; }

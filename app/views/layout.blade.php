@@ -39,21 +39,6 @@
     <link type="text/css" href="/css/vendor/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
     <script type="text/javascript" src="/js/jplayer/jquery.jplayer.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#jquery_jplayer_1").jPlayer({
-                ready: function () {
-                    $(this).jPlayer("setMedia", {
-                        title: "Sir Duke (Cover) - Pulse",
-                        mp3: "/audio/SirDuke.mp3"
-                    });
-                },
-                swfPath: "/js/jplayer",
-                supplied: "mp3"
-            });
-        });
-    </script>
-
 </head>
 <body>
 

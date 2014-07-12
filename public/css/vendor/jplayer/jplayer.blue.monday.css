@@ -83,7 +83,7 @@ div.jp-interface {
 }
 
 div.jp-audio div.jp-type-single div.jp-interface {
-	height:80px;
+	height:86px;
 }
 div.jp-audio div.jp-type-playlist div.jp-interface {
 	height:80px;
@@ -302,6 +302,7 @@ a.jp-unmute:hover {
 }
 a.jp-volume-max {
 	background: url("jplayer.blue.monday.jpg") 0 -186px no-repeat;
+    display: none !important;
 }
 a.jp-volume-max:hover {
 	background: url("jplayer.blue.monday.jpg") -19px -186px no-repeat;
@@ -579,6 +580,7 @@ a.jp-restore-screen:hover {
 
 a.jp-repeat {
 	background: url("jplayer.blue.monday.jpg") 0 -290px no-repeat;
+    display: none !important;
 }
 
 a.jp-repeat:hover {
