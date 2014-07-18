@@ -64,8 +64,11 @@ body {
 .button:hover {
   opacity: 0.8; }
 
+.mainbar {
+  margin-bottom: 25px; }
+
 .sidebar {
-  margin: 25px 0; }
+  margin: 20px 0; }
 
 .contact-container {
   float: right; }
@@ -90,22 +93,22 @@ body {
 
 .flexslider li .image {
   float: left;
-  width: 35%; }
+  width: 25%; }
   .flexslider li .image img {
     border: 3px solid white;
     height: 100%;
     max-width: 100%; }
 .flexslider li .promo-container {
-  width: 65%;
+  width: 75%;
   float: left;
   color: white; }
   .flexslider li .promo-container .content {
-    padding: 25px; }
+    padding: 10px 20px; }
     .flexslider li .promo-container .content .promo-title {
       margin-top: 0px;
       margin-bottom: 20px; }
     .flexslider li .promo-container .content .promo {
-      margin-bottom: 55px; }
+      margin-bottom: 45px; }
     .flexslider li .promo-container .content .venue-container {
       float: left; }
     .flexslider li .promo-container .content .attendance-container {
@@ -117,21 +120,26 @@ body {
   clear: both; }
 
 .page-title {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  background-image: url("../images/darkpattern.png");
+  color: white;
+  padding: 20px 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center; }
 
 .upcoming-shows-container {
   border-radius: 5px; }
   .upcoming-shows-container .shows-header {
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-image: url("../images/darkpattern.png"); }
+    border-top-right-radius: 5px; }
     .upcoming-shows-container .shows-header .content {
       font-size: 20px; }
   .upcoming-shows-container .show.last {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
   .upcoming-shows-container .show, .upcoming-shows-container .shows-header {
-    color: white; }
+    border: 3px solid #519cd0; }
     .upcoming-shows-container .show .venue, .upcoming-shows-container .show .location, .upcoming-shows-container .show .date, .upcoming-shows-container .show .time, .upcoming-shows-container .shows-header .venue, .upcoming-shows-container .shows-header .location, .upcoming-shows-container .shows-header .date, .upcoming-shows-container .shows-header .time {
       display: inline-block;
       margin-right: -3px;
@@ -147,16 +155,16 @@ body {
       width: 20%; }
     .upcoming-shows-container .show .content, .upcoming-shows-container .shows-header .content {
       padding: 15px; }
-  .upcoming-shows-container .show:nth-child(even) {
-    background-image: url("../images/darkpattern.png"); }
-  .upcoming-shows-container .show:nth-child(odd) {
-    background-image: url("../images/tweedpattern.png"); }
+  .upcoming-shows-container .show {
+    border-top: none; }
 
 .past-shows-container {
   text-align: center;
   background-image: url("../images/darkpattern.png");
   color: white;
-  padding-top: 1px; }
+  padding-top: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
   .past-shows-container .show {
     padding: 15px 15px 25px;
     border-bottom: 1px solid white; }
@@ -172,7 +180,7 @@ body {
   margin-bottom: 15px; }
   .song-container .song-info {
     float: left;
-    width: 40%;
+    width: 44%;
     background-image: url("../images/darkpattern.png");
     color: white; }
     .song-container .song-info .content {

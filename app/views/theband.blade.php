@@ -1,9 +1,11 @@
 @extends ('layout')
 @section('content')
 <div class="container">
-<div class=starter-template">
 
-    <h1 style="text-align:center">About the band</h1>
+    <div class="row">
+        <h1 class="col-md-12 page-title">About the band</h1>
+    </div>
+
     <p style="text-align: center">
         We are the leading Motown/Funk band of Niagara. Here to kick ass and chew bubblegum. Kappa
     </p>
@@ -34,7 +36,6 @@
 
         </div>
     </div>
-</div>
 </div>
 
 @stop

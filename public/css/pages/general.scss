@@ -88,11 +88,11 @@ body {
 }
 
 .mainbar{
-
+  margin-bottom: 25px;
 }
 
 .sidebar{
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .contact-container{
@@ -130,7 +130,7 @@ body {
   li{
     .image{
       float: left;
-      width:35%;
+      width:25%;
 
       img{
         border:3px solid white;
@@ -139,12 +139,12 @@ body {
       }
     }
     .promo-container{
-      width:65%;
+      width:75%;
       float: left;
       color:white;
 
       .content{
-        padding:25px;
+        padding:10px 20px;
 
         .promo-title{
           margin-top:0px;
@@ -152,7 +152,7 @@ body {
         }
 
         .promo{
-          margin-bottom: 55px;
+          margin-bottom: 45px;
         }
 
         .venue-container{
@@ -179,6 +179,12 @@ body {
 
 .page-title{
   margin-bottom: 25px;
+  background-image:url('../images/darkpattern.png');
+  color: white;
+  padding:20px 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
 }
 
 .upcoming-shows-container{
@@ -187,7 +193,7 @@ body {
   .shows-header{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-image: url('../images/darkpattern.png');
+    //background-image: url('../images/darkpattern.png');
 
     .content{
       font-size: 20px;
@@ -201,7 +207,9 @@ body {
   }
 
   .show, .shows-header{
-    color:white;
+    //color:white;
+    border:3px solid $lightblue;
+
 
     .venue, .location, .date, .time{
       display: inline-block;
@@ -229,11 +237,11 @@ body {
     }
   }
 
-  .show:nth-child(even){
-    background-image: url('../images/darkpattern.png');
+  .show{
+    border-top:none;
   }
   .show:nth-child(odd){
-    background-image: url('../images/tweedpattern.png');
+    //background-image: url('../images/tweedpattern.png');
   }
 }
 
@@ -242,6 +250,8 @@ body {
   background-image:url('../images/darkpattern.png');
   color:white;
   padding-top: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   .show{
     padding:15px 15px 25px;
@@ -264,7 +274,7 @@ body {
   margin-bottom: 15px;
   .song-info{
     float: left;
-    width: 40%;
+    width: 44%;
     background-image:url('../images/darkpattern.png');
     color:white;
     .content{

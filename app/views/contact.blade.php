@@ -5,7 +5,7 @@
 <div class="container">
 <div class="starter-template">
 
-    <h3>Contact Us</h3>
+    <h1 class="page-title">Contact Us</h1>
 
     {{ Form::open(array('url' => 'contact')) }}
     <table>
