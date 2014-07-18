@@ -7,8 +7,29 @@
 
     <h3>Contact Us</h3>
 
+    <table class="col-sm-6">
+        <tr>
+            <th>Have Any Questions?</th>
+        </tr>
+        <tr>
+            <td>
+                <br><br>
+                You can fill out the form to the right and send a message directly to us! <br>
+                If you would like to book a gig, ask questions, or any thing related to the band <br>
+                we will get back to as soon as possible.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="pulse-logo">
+                    <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
+                </div>
+            </td>
+        </tr>
+    </table>
+
     {{ Form::open(array('url' => 'contact')) }}
-    <table>
+    <table class="col-sm-6">
         <tr>
             <td>{{ Form::label('name', 'Name') }}</td>
             <td>{{ Form::text('name', ' ')   }} <?php echo $errors->first('name');?></td>
