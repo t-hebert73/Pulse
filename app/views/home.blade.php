@@ -41,8 +41,17 @@
                             <h1 class="promo-title">Protoss Overpowered!</h1>
                             <p class="promo">Curabitur malesuada purus ornare condimentum adipiscing. In tempor tristique mi non laoreet. Vestibulum ac dui consectetur, fermentum sapien et, ultricies sem. Etiam tortor mi, ullamcorper et nisi eu, sagittis convallis metus. Praesent rutrum, tellus ac viverra varius, diam dolor interdum turpis, aliquet tincidunt lectus massa ac lorem. Proin consequat tincidunt vehicula. Cras sagittis augue enim, eget aliquam urna eleifend et. Duis accumsan consectetur vulputate. Quisque vestibulum fermentum pulvinar.</p>
 
-                            <p class="promo-foot">Mauris viverra semper lorem. Curabitur malesuada purus ornare condimentum adipiscing. In tempor tristique mi non laoreet. Mauris viverra semper lorem. Curabitur malesuada purus ornare condimentum adipiscing. In tempor tristique mi non laoreet.  </p>
-                        </div>
+                            <div class="clear"></div>
+                            <div class="venue-container">
+                                <h4 class="heading">Venue:</h4>
+                                <p class="venue">The Auditorium</p>
+                            </div>
+                            <div class="attendance-container">
+                                <h4 class="heading">Attendance:</h4>
+                                <p class="attendance">50,000 people</p>
+                            </div>
+                            <div class="clear"></div>
+                           </div>
                     </div>
 
                     <div class="clear"></div>
@@ -94,7 +103,7 @@
     <div class="sidebar col-md-4">
 
         <div class="twitter-feed-container">
-            <a class="twitter-timeline" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
+            <a class="twitter-timeline" height="400" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
@@ -113,7 +122,8 @@
 <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
             $('.flexslider').flexslider({
-                animation: 'fade'
+                animation: 'fade',
+                height: 200
             });
 
     });
