@@ -89,10 +89,11 @@ body {
 
 .mainbar{
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .sidebar{
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 .contact-container{
@@ -113,6 +114,7 @@ body {
 
 .twitter-feed-container{
   @include box-shadow(0 0 15px #888);
+  margin-top:15px;
 }
 
 .twitter-feed-container{
@@ -178,13 +180,12 @@ body {
 //shows page
 
 .page-title{
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   background-image:url('../images/darkpattern.png');
   color: white;
-  padding:20px 15px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  padding:30px 15px;
   text-align: center;
+  margin-top:0px;
 }
 
 .upcoming-shows-container{
@@ -270,16 +271,21 @@ body {
 * Media Page
 */
 
+.content-container{
+}
+
 .song-container{
   margin-bottom: 15px;
   .song-info{
     float: left;
-    width: 44%;
-    background-image:url('../images/darkpattern.png');
-    color:white;
+    width: 303px;
+    color:black;
     .content{
+      border:1px solid $lightblue;
+      border-left:5px solid $lightblue;
+      border-right: 0px;
       text-align: center;
-      padding:10px;
+      padding:10px 10px 8px;
     }
   }
   .jp-audio{
@@ -304,6 +310,7 @@ body {
 
   h2{
     margin-bottom: 35px;
+    margin-top:5px;
   }
 
   .image-container{

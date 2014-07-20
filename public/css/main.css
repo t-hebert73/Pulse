@@ -65,10 +65,11 @@ body {
   opacity: 0.8; }
 
 .mainbar {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-top: 25px; }
 
 .sidebar {
-  margin: 20px 0; }
+  margin: 0px 0; }
 
 .contact-container {
   float: right; }
@@ -84,7 +85,8 @@ body {
 .twitter-feed-container {
   -webkit-box-shadow: 0 0 15px #888888;
   -moz-box-shadow: 0 0 15px #888888;
-  box-shadow: 0 0 15px #888888; }
+  box-shadow: 0 0 15px #888888;
+  margin-top: 15px; }
 
 .topbar {
   background-image: url("../images/darkpattern.png"); }
@@ -120,13 +122,12 @@ body {
   clear: both; }
 
 .page-title {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   background-image: url("../images/darkpattern.png");
   color: white;
-  padding: 20px 15px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  text-align: center; }
+  padding: 30px 15px;
+  text-align: center;
+  margin-top: 0px; }
 
 .upcoming-shows-container {
   border-radius: 5px; }
@@ -180,12 +181,14 @@ body {
   margin-bottom: 15px; }
   .song-container .song-info {
     float: left;
-    width: 44%;
-    background-image: url("../images/darkpattern.png");
-    color: white; }
+    width: 303px;
+    color: black; }
     .song-container .song-info .content {
+      border: 1px solid #519cd0;
+      border-left: 5px solid #519cd0;
+      border-right: 0px;
       text-align: center;
-      padding: 10px; }
+      padding: 10px 10px 8px; }
   .song-container .jp-audio {
     float: left; }
     .song-container .jp-audio .jp-details {
@@ -197,7 +200,8 @@ body {
   color: white;
   padding: 15px 0px; }
   .recording-info-container h2 {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    margin-top: 5px; }
   .recording-info-container .image-container {
     margin: 0px 25px 25px;
     border: 3px solid white; }
