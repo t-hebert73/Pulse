@@ -26,7 +26,7 @@
             </tr>
         </table>
 
-        {{ Form::open(array('url' => 'contact')) }}
+        {{ Form::open(array('url' => 'contact', 'id' => 'ajax')) }}
         <table class="col-sm-6">
             <tr>
                 <td>{{ Form::label('name', 'Name') }}</td>

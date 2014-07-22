@@ -20,6 +20,11 @@ Route::get('contact', function()
 //POST CONTACT
 Route::post('contact', 'ContactController@ContactUsForm');
 
+//GET emailSuccess
+Route::get('emailSuccess', function(){
+    return View::make('emailSuccess');
+});
+
 Route::get('theband', function()
 {
     return View::make('theband');

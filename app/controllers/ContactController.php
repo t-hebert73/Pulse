@@ -34,6 +34,9 @@ class ContactController extends  BaseController {
                 ->withErrors($validation)  //Will send errors to the form
                 ->withInput();  //Will keep input in the form
         }
+        else{
+            return Redirect::to('emailSuccess');
+        }
 
         //Prepare data to send to the email view
         $data = array('name' => $input['name'],
