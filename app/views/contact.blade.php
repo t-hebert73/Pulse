@@ -1,5 +1,4 @@
 @extends('layout')
-
 @section('content')
 
 <h1 class="page-title">Contact Us</h1>
@@ -31,7 +30,7 @@
         <table class="col-sm-6">
             <tr>
                 <td>{{ Form::label('name', 'Name') }}</td>
-                <td>{{ Form::text('name', ' ')   }} <?php echo $errors->first('name');?></td>
+                <td>{{ Form::text('name', '') }} <?php echo $errors->first('name');?></td>
             </tr>
             <tr>
                 <td>{{ Form::label('email', 'Email') }}</td>
