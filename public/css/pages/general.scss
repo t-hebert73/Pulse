@@ -325,3 +325,40 @@ body {
     padding:0px 15px;
   }
 }
+
+
+.row {
+  display: table;
+}
+
+.band-border {
+  border-spacing: 10px 50px;
+
+  .odd p{
+    color: black;
+  }
+
+  .even p{
+    color:#CCE2FF;
+  }
+
+  div{
+    width: 25%;
+    box-shadow: 6px 10px 5px #888888;
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    border: solid;
+    line-height: 1.2;
+  }
+
+  h3{
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 15px;
+    margin: auto;
+  }
+}

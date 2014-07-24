@@ -209,3 +209,27 @@ body {
       max-width: 100%; }
   .recording-info-container .content {
     padding: 0px 15px; }
+
+.row {
+  display: table; }
+
+.band-border {
+  border-spacing: 10px 50px; }
+  .band-border .odd p {
+    color: black; }
+  .band-border .even p {
+    color: #CCE2FF; }
+  .band-border div {
+    width: 25%;
+    box-shadow: 6px 10px 5px #888888;
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    border: solid;
+    line-height: 1.2; }
+  .band-border h3 {
+    font-weight: bold; }
+  .band-border p {
+    font-size: 15px;
+    margin: auto; }
