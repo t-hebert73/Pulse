@@ -6,7 +6,7 @@
 </h2>
 
 <?php
-header('Refresh: 5; URL=/');
+header('Refresh: 3; URL=/');
 ?>
 
 @stop
