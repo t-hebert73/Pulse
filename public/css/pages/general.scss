@@ -328,9 +328,11 @@ body {
 
 
 .row {
+  width: 100%;
   display: table;
 }
 
+/*
 .band-border {
   border-spacing: 10px 50px;
 
@@ -361,6 +363,21 @@ body {
     font-size: 15px;
     margin: auto;
   }
+}
+*/
+.spacing {
+  border-collapse: separate;
+  border-spacing: 5px;
+  padding-right: 5px;
+}
+
+.bio{
+  border: solid;
+  padding: 80px;
+  text-align: center;
+  display: block;
+  margin-left:50px;
+  margin-right:50px;
 }
 
 .modalDialog {

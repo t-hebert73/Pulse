@@ -211,15 +211,22 @@ body {
     padding: 0px 15px; }
 
 .row {
+  width: 100%;
   display: table; }
 
+/*
 .band-border {
-  border-spacing: 10px 50px; }
-  .band-border .odd p {
-    color: black; }
-  .band-border .even p {
-    color: #CCE2FF; }
-  .band-border div {
+  border-spacing: 10px 50px;
+
+  .odd p{
+    color: black;
+  }
+
+  .even p{
+    color:#CCE2FF;
+  }
+
+  div{
     width: 25%;
     box-shadow: 6px 10px 5px #888888;
     float: none;
@@ -227,12 +234,31 @@ body {
     vertical-align: top;
     padding: 10px;
     border: solid;
-    line-height: 1.2; }
-  .band-border h3 {
-    font-weight: bold; }
-  .band-border p {
+    line-height: 1.2;
+  }
+
+  h3{
+    font-weight: bold;
+  }
+
+  p {
     font-size: 15px;
-    margin: auto; }
+    margin: auto;
+  }
+}
+*/
+.spacing {
+  border-collapse: separate;
+  border-spacing: 5px;
+  padding-right: 5px; }
+
+.bio {
+  border: solid;
+  padding: 80px;
+  text-align: center;
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px; }
 
 .modalDialog {
   position: fixed;

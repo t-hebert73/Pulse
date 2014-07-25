@@ -5,14 +5,11 @@
 
 <div class="content">
     <div class="container">
-
-        <div class="mainbar">
-
-            <div class="row" style="text-align: center">
-
-                <div class="col-md-3" style="background-color: #CCE2FF">
+        <div class="mainbar spacing">
+            <div class="row">
+                <!-- Patrick Shea's Bio -->
+                <div class="bio col-md-4" style="background-color: #CCE2FF; float:left">
                     <a href="#openModalPat">Patrick Shea</a>
-
                     <div id="openModalPat" class="modalDialog">
                         <div>
                             <a href="#close" title="Close" class="close">X</a>
@@ -34,7 +31,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 even" style="background-color: #566780">
+
+                <!-- Marcus Gazzellone's Bio -->
+                <div class="bio col-md-4" style="background-color: #566780; float:right">
                     <a href="#openModalMarcus">Marcus Gazzellone</a>
                     <div id="openModalMarcus" class="modalDialog">
                         <div>
@@ -56,22 +55,39 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 odd" style="background-color: #CCE2FF">
 
-                    <h3>Max Saglimbeni</h3>
-                    <p>Bass Guitar/Backup Vocals</p>
+            </div> <!-- Closing Row Div -->
+            <div class="row">
 
+                <!-- Max Saglimbeni's Bio -->
+                <div class="bio col-md-4" style="background-color: #CCE2FF; float:left">
+                    <a href="#openModalMax">Max Saglimbeni</a>
+
+                    <div id="openModalMax" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h3>Max Saglimbeni</h3>
+                            <p>Bass Guitar/Back-up Vocals</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 even" style="background-color: #566780">
 
-                    <h3>Trevor Hebert</h3>
-                    <p>Lead Guitar</p>
+                <!-- Trevor Hebert's Bio -->
+                <div class="bio col-md-4" style="background-color: #566780; float:right;">
+                    <a href="#openModalTrevor">Trevor Hebert</a>
 
+                    <div id="openModalTrevor" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h3>Trevor Hebert</h3>
+                            <p>Lead Guitar</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+         </div><!-- Closing Mainbar Div -->
+    </div> <!-- Closing Container Div -->
+</div>  <!-- Closing Content Div -->
 
 
 @stop
