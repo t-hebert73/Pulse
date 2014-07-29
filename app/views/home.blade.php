@@ -1,41 +1,6 @@
 @extends('layout')
 
 @section('content')
-<h1 class="page-title">Welcome To Pulse Band</h1>
-<div class="container">
-
-<div class="row">
-
-    <div class="mainbar col-md-8">
-        <div class="main-content">
-            <div class="pulse-logo">
-                <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
-            </div>
-
-            <p>Welcome to the Pulse band website. We are a mostly mowntown cover band that plays music good. You can listen to it, yes yes, so listen. Why was the band playing music? because it was good. aw yah. </p>
-            <p>We can play 4 sets of 15 songs and provide entertainment. We play in bars and for weddings too. We have all equipment necessary to play. Book now!</p>
-        </div>
-    </div>
-
-    <div class="sidebar col-md-4">
-
-        <div class="twitter-feed-container">
-            <a class="twitter-timeline" height="320" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-
-        </div>
-
-
-
-
-    </div>
-
-
-</div>
-</div>
-
 <div class="topbar">
     <div class="container">
         <!-- Place somewhere in the <body> of your page -->
@@ -110,6 +75,39 @@
             </ul>
         </div>
     </div>
+</div>
+<div class="container">
+
+<div class="row">
+
+    <div class="mainbar col-md-8">
+        <div class="main-content">
+            <div class="pulse-logo">
+                <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
+            </div>
+
+            <p>Welcome to the Pulse band website. We are a mostly mowntown cover band that plays music good. You can listen to it, yes yes, so listen. Why was the band playing music? because it was good. aw yah. </p>
+            <p>We can play 4 sets of 15 songs and provide entertainment. We play in bars and for weddings too. We have all equipment necessary to play. Book now!</p>
+        </div>
+    </div>
+
+    <div class="sidebar col-md-4">
+
+        <div class="twitter-feed-container">
+            <a class="twitter-timeline" height="320" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
