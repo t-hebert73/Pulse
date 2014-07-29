@@ -249,16 +249,24 @@ body {
 */
 .spacing {
   border-collapse: separate;
-  border-spacing: 5px;
+  border-spacing: 4px;
   padding-right: 5px; }
 
 .bio {
   border: solid;
-  padding: 80px;
   text-align: center;
-  display: block;
-  margin-left: 50px;
-  margin-right: 50px; }
+  display: inline-block;
+  margin-right: 20px;
+  height: 300px;
+  width: 300px;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #519cd0; }
+  .bio a {
+    color: black;
+    font-weight: bold; }
+
+.marginLeft {
+  margin-left: 25%; }
 
 .modalDialog {
   position: fixed;

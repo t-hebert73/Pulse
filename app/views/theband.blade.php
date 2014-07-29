@@ -8,8 +8,9 @@
         <div class="mainbar spacing">
             <div class="row">
                 <!-- Patrick Shea's Bio -->
-                <div class="bio col-md-4" style="background-color: #CCE2FF; float:left">
-                    <a href="#openModalPat">Patrick Shea</a>
+                    <div class="bio marginLeft">
+                        <a href="#openModalPat"><img src="images/Pulse400x400.png" /></a>
+                    </div>
                     <div id="openModalPat" class="modalDialog">
                         <div>
                             <a href="#close" title="Close" class="close">X</a>
@@ -29,12 +30,11 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
 
                 <!-- Marcus Gazzellone's Bio -->
-                <div class="bio col-md-4" style="background-color: #566780; float:right">
-                    <a href="#openModalMarcus">Marcus Gazzellone</a>
+                    <div class="bio">
+                        <a href="#openModalMarcus"><img src="images/Pulse400x400.png" /></a>
+                    </div>
                     <div id="openModalMarcus" class="modalDialog">
                         <div>
                             <a href="#close" title="Close" class="close">X</a>
@@ -53,15 +53,14 @@
                             </p>
                         </div>
                     </div>
-                </div>
 
 
             </div> <!-- Closing Row Div -->
             <div class="row">
-
                 <!-- Max Saglimbeni's Bio -->
-                <div class="bio col-md-4" style="background-color: #CCE2FF; float:left">
-                    <a href="#openModalMax">Max Saglimbeni</a>
+                <div class="bio marginLeft">
+                    <a href="#openModalMax"><img src="images/Pulse400x400.png" /></a>
+                </div>
 
                     <div id="openModalMax" class="modalDialog">
                         <div>
@@ -70,12 +69,11 @@
                             <p>Bass Guitar/Back-up Vocals</p>
                         </div>
                     </div>
-                </div>
 
                 <!-- Trevor Hebert's Bio -->
-                <div class="bio col-md-4" style="background-color: #566780; float:right;">
-                    <a href="#openModalTrevor">Trevor Hebert</a>
-
+                <div class="bio">
+                    <a href="#openModalTrevor"><img src="images/Pulse400x400.png" /></a>
+                </div>
                     <div id="openModalTrevor" class="modalDialog">
                         <div>
                             <a href="#close" title="Close" class="close">X</a>
@@ -83,7 +81,7 @@
                             <p>Lead Guitar</p>
                         </div>
                     </div>
-                </div>
+
             </div>
          </div><!-- Closing Mainbar Div -->
     </div> <!-- Closing Container Div -->
