@@ -52,7 +52,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="/"><img class="logo" src="images/Pulse400x400.png" /></a>
+            <a class="navbar-brand" href="/"><img class="logo" src="images/placeholderlogo.png" /></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -75,10 +75,10 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="secret-social-icons">
-            <div class="t icon" ></div>
-            <div class="f icon" ></div>
-            <div class="y icon" ></div>
+        <div class="social-icons">
+            <a href="http://www.twitter.com" class="twitter icon" target="_blank"></a>
+            <a href="http://www.facebook.com" class="facebook icon" target="_blank"></a>
+            <a href="http://www.youtube.com" class="youtube icon" target="_blank"></a>
         </div>
         Copyright <?php echo date('Y'); ?>
     </div>
