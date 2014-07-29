@@ -64,12 +64,37 @@ body {
   text-align: center;
 }
 
+.social-icons{
+  margin-bottom: 5px;
+  .icon{
+    display: inline-block;
+  }
+  .twitter{
+    background-image: url('../images/twitter_icon.png');
+    background-size: 38px 38px;
+    width:38px;
+    height: 38px;
+  }
+  .facebook{
+    background-image: url('../images/facebook_icon.png');
+    background-size: 38px 38px;
+    width:38px;
+    height: 38px;
+  }
+  .youtube{
+    background-image: url('../images/youtube_icon.png');
+    background-size: 38px 38px;
+    width:38px;
+    height: 38px;
+  }
+}
+
 .starter-template {
   padding:15px 0;
 }
 
 .pulse-logo{
-  width:370px;
+  width:260px;
   margin:auto;
 
   img{
@@ -113,7 +138,6 @@ body {
 }
 
 .twitter-feed-container{
-  @include box-shadow(0 0 15px #888);
   margin-top:15px;
 }
 
@@ -121,6 +145,7 @@ body {
 }
 
 .topbar{
+  margin-top:5px;
   background-image:url('../images/darkpattern.png');
 
   .container{
@@ -137,7 +162,8 @@ body {
       img{
         border:3px solid white;
         height:100%;
-        max-width: 100%;
+        max-width: 80%;
+        margin-left:30px;
       }
     }
     .promo-container{
@@ -154,7 +180,7 @@ body {
         }
 
         .promo{
-          margin-bottom: 45px;
+          margin-bottom: 5px;
         }
 
         .venue-container{

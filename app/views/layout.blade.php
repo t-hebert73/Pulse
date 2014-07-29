@@ -75,6 +75,11 @@
 
 <footer class="footer">
     <div class="container">
+        <div class="social-icons">
+            <a href="http://www.twitter.com" class="twitter icon" target="_blank"></a>
+            <a href="http://www.facebook.com" class="facebook icon" target="_blank"></a>
+            <a href="http://www.youtube.com" class="youtube icon" target="_blank"></a>
+        </div>
         Copyright <?php echo date('Y'); ?>
     </div>
 </footer>
