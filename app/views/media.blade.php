@@ -169,11 +169,11 @@
                     <h2>Recording Information</h2>
 
                     <div class="image-container">
-                        <img src="/images/Recording_Studio.jpg" />
+                        <img src="/images/studio.jpg" />
                     </div>
 
                     <div class="content">
-                        <p>These songs were recorded in the finest recording studio money can buy.</p>
+                        <p>These songs were recorded in the home studio of Marcus Gazzellone.</p>
                     </div>
 
                 </div>

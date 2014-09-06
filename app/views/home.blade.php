@@ -7,70 +7,41 @@
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <div class="image">
-                        <img src="images/placeholder2.jpg" />
-                    </div>
-                    <div class="promo-container">
-                        <div class="content">
-                            <h1 class="promo-title">Check Out The Newly Added Songs!</h1>
-                            <p class="promo">Pulse has recorded 3 new cover songs so head over to the media page to listen!</p>
-
-                            <div class="clear"></div>
-
-
+                    <a href="media">
+                        <div class="image">
+                            <img src="images/studio.jpg" />
                         </div>
-                    </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title">Check Out The Newly Added Songs</h1>
+                                <p class="promo">Pulse has recorded 3 new cover songs so head over to the media page to listen!</p>
 
-                    <div class="clear"></div>
+                                <div class="clear"></div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </a>
                 </li>
+
                 <li>
-                    <div class="image">
-                        <img src="images/placeholder1.jpg" />
-                    </div>
-                    <div class="promo-container">
-                        <div class="content">
-                            <h1 class="promo-title">Protoss Overpowered!</h1>
-                            <p class="promo">Aidunt lectus massa ac lorem. Proin consequat tincidunt vehicula. Cras sagittis augue enim, eget aliquam urna eleifend et. Duis accumsan consectetur vulputate. Quisque vestibulum fermentum pulvinar.</p>
-
-                            <div class="clear"></div>
-                            <div class="venue-container">
-                                <h4 class="heading">Venue:</h4>
-                                <p class="venue">The Auditorium</p>
-                            </div>
-                            <div class="attendance-container">
-                                <h4 class="heading">Attendance:</h4>
-                                <p class="attendance">50,000 people</p>
-                            </div>
-                            <div class="clear"></div>
+                    <a href="contact">
+                        <div class="image">
+                            <img src="images/pulse.jpg" />
                         </div>
-                    </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title">Now Booking Gigs</h1>
+                                <p class="promo"> Pulse is now looking to book gigs, so head over the to contact page to book now.</p>
 
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="image">
-                        <img src="images/placeholder3.png" />
-                    </div>
-                    <div class="promo-container">
-                        <div class="content">
-                            <h1 class="promo-title">Terran Tier 1 Units!</h1>
-                            <p class="promo"> Pellentesque sagittis scelerisque lectus et vehicula. Sed porttitor at augue id dignissim. Nunc quis sollicitudin neque, in tincidunt metus. Cras eu pulvinar tellus, vel tempor mi.</p>
 
-                            <div class="clear"></div>
-
-                            <div class="venue-container">
-                                <h4 class="heading">Venue:</h4>
-                                <p class="venue">The Auditorium</p>
                             </div>
-                            <div class="attendance-container">
-                                <h4 class="heading">Attendance:</h4>
-                                <p class="attendance">50,000 people</p>
-                            </div>
-                            <div class="clear"></div>
                         </div>
-                    </div>
 
-                    <div class="clear"></div>
+                        <div class="clear"></div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -80,7 +51,7 @@
 
 <div class="row">
 
-    <div class="mainbar col-md-8">
+    <div class="mainbar col-md-12">
         <div class="main-content">
             <div class="pulse-logo">
                 <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
@@ -91,7 +62,7 @@
         </div>
     </div>
 
-    <div class="sidebar col-md-4">
+    <!--<div class="sidebar col-md-4">
 
         <div class="twitter-feed-container">
             <a class="twitter-timeline" height="320" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
@@ -104,7 +75,7 @@
 
 
 
-    </div>
+    </div>-->
 
 
 </div>
