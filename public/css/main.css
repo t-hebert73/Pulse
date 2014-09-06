@@ -319,6 +319,7 @@ body {
 .close {
   background: #606061;
   color: #FFFFFF;
+  opacity: 1;
   line-height: 25px;
   position: absolute;
   right: -12px;
