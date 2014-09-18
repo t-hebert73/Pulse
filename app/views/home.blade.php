@@ -57,8 +57,10 @@
                 <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
             </div>
 
-            <p>Welcome to the Pulse band website. We are a mostly mowntown cover band that plays music good. You can listen to it, yes yes, so listen. Why was the band playing music? because it was good. aw yah. </p>
-            <p>We can play 4 sets of 15 songs and provide entertainment. We play in bars and for weddings too. We have all equipment necessary to play. Book now!</p>
+            <p>
+                Welcome to the Pulse Band website. We're a fresh new band in the Niagara region looking to bring the Motown/Funk/Soul genres back in style.
+                This website is still under development, more content soon to come.
+            </p>
         </div>
     </div>
 
