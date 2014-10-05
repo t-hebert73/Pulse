@@ -15,7 +15,7 @@
                         <div class="song-info">
                             <div class="content">
                                 <h4 class="song-title">Treasure</h4>
-                                <h4 class="band-name">Pulse (Bruno Mars Cover)</h4>
+                                <h4 class="band-name">Pulse </h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -65,7 +65,7 @@
                         <div class="song-info">
                             <div class="content">
                                 <h4 class="song-title">Sir Duke</h4>
-                                <h4 class="band-name">Pulse (Stevie Wonder Cover)</h4>
+                                <h4 class="band-name">Pulse</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_sirduke" class="jp-jplayer"></div>
@@ -115,11 +115,109 @@
                         <div class="song-info">
                             <div class="content">
                                 <h4 class="song-title">Josie</h4>
-                                <h4 class="band-name">Pulse (Steely Dan Cover)</h4>
+                                <h4 class="band-name">Pulse</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_josie" class="jp-jplayer"></div>
                         <div id="jp_container_josie" class="jp-audio">
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                    </ul>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <div class="jp-time-holder">
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-duration"></div>
+                                        <ul class="jp-toggles">
+                                            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="jp-details">
+                                    <ul>
+                                        <li><span class="jp-title"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="jp-no-solution">
+                                    <span>Update Required</span>
+                                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="song-container">
+                        <div class="song-info">
+                            <div class="content">
+                                <h4 class="song-title">Get Lucky</h4>
+                                <h4 class="band-name">Pulse </h4>
+                            </div>
+                        </div>
+                        <div id="jquery_jplayer_getlucky" class="jp-jplayer"></div>
+                        <div id="jp_container_getlucky" class="jp-audio">
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                    </ul>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <div class="jp-time-holder">
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-duration"></div>
+                                        <ul class="jp-toggles">
+                                            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="jp-details">
+                                    <ul>
+                                        <li><span class="jp-title"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="jp-no-solution">
+                                    <span>Update Required</span>
+                                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="song-container">
+                        <div class="song-info">
+                            <div class="content">
+                                <h4 class="song-title">Chameleon</h4>
+                                <h4 class="band-name">Pulse </h4>
+                            </div>
+                        </div>
+                        <div id="jquery_jplayer_chameleon" class="jp-jplayer"></div>
+                        <div id="jp_container_chameleon" class="jp-audio">
                             <div class="jp-type-single">
                                 <div class="jp-gui jp-interface">
                                     <ul class="jp-controls">
@@ -232,6 +330,36 @@
             swfPath: "/js/jplayer",
             supplied: "mp3",
             cssSelectorAncestor: '#jp_container_josie'
+        });
+
+        $("#jquery_jplayer_chameleon").jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: "Chameleon - Pulse",
+                    mp3: "/audio/Chameleon.mp3"
+                });
+            },
+            play: function() { // To avoid both jPlayers playing together.
+                $(this).jPlayer("pauseOthers");
+            },
+            swfPath: "/js/jplayer",
+            supplied: "mp3",
+            cssSelectorAncestor: '#jp_container_chameleon'
+        });
+
+        $("#jquery_jplayer_getlucky").jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: "Get Lucky - Pulse",
+                    mp3: "/audio/GetLucky.mp3"
+                });
+            },
+            play: function() { // To avoid both jPlayers playing together.
+                $(this).jPlayer("pauseOthers");
+            },
+            swfPath: "/js/jplayer",
+            supplied: "mp3",
+            cssSelectorAncestor: '#jp_container_getlucky'
         });
     });
 </script>
