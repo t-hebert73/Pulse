@@ -345,6 +345,8 @@ body {
     text-align: center;
     font-size: 20px;
     margin-top: 10px; }
+  .the-band-page .band-member span {
+    color: #519cd0; }
 .the-band-page .row {
   padding-left: 23.5%; }
   .the-band-page .row .patrick-container, .the-band-page .row .max-container {

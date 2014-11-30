@@ -13,7 +13,7 @@
                         <div class="bio">
                             <a class="patrick-link link" href="#openModalPat"></a>
                         </div>
-                        <h2 class="patrick-shea name">Patrick Shea</h2>
+                        <h2 class="patrick-shea name">Patrick Shea - <span>Vocals</span></h2>
 
                         <div id="openModalPat" class="modalDialog">
                             <div>
@@ -43,7 +43,7 @@
                         <div class="bio">
                             <a class="marcus-link link" href="#openModalMarcus"></a>
                         </div>
-                        <h2 class="marcus-gazzellone name">Marcus Gazzellone</h2>
+                        <h2 class="marcus-gazzellone name">Marcus Gazzellone - <span>Drums</span></h2>
                         <div id="openModalMarcus" class="modalDialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
@@ -77,7 +77,7 @@
                         <div class="bio">
                             <a class="max-link link" href="#openModalMax"></a>
                         </div>
-                        <h2 class="max-saglimbeni name">Max Saglimbeni</h2>
+                        <h2 class="max-saglimbeni name">Max Saglimbeni - <span>Bass</span></h2>
                         <div id="openModalMax" class="modalDialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
@@ -108,7 +108,7 @@
                         <div class="bio">
                             <a class="trevor-link link" href="#openModalTrevor"></a>
                         </div>
-                        <h2 class="trevor-hebert name">Trevor Hebert</h2>
+                        <h2 class="trevor-hebert name">Trevor Hebert - <span>Guitar</span></h2>
                         <div id="openModalTrevor" class="modalDialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
