@@ -42,6 +42,14 @@ body {
 
 .navbar-collapse{
   float: left;
+  @media #{$mobile}{
+    width: 100%;
+    margin-left:0px !important;
+    margin-right: 0px !important;
+    padding:0px !important;
+    overflow: visible !important;
+    max-height: 369px;
+  }
 
   .nav.navbar-nav{
     li{
@@ -93,6 +101,18 @@ body {
   padding:15px 0;
 }
 
+.main-content{
+  @media #{$mobile}{
+    width:348px;
+  }
+
+  p{
+    @media #{$mobile}{
+      text-align: center;
+    }
+  }
+}
+
 .pulse-logo{
   width:260px;
   margin:auto;
@@ -123,6 +143,9 @@ body {
 
 .contact-container{
   float: right;
+  @media #{$mobile}{
+    display: none;
+  }
 
   .email{
     color:white;
@@ -157,6 +180,9 @@ body {
     .image{
       float: left;
       width:25%;
+      @media #{$mobile} {
+        display: none;
+      }
 
       img{
         border:3px solid white;
@@ -169,6 +195,9 @@ body {
       width:75%;
       float: left;
       color:white;
+      @media #{$mobile}{
+        width: 100%;
+      }
 
       .content{
         padding:10px 20px;
@@ -177,13 +206,17 @@ body {
           margin-top:0px;
           margin-bottom:20px;
 
-          @media #{$small}{
+          @media #{$ltDesktop}{
             font-size:28px;
+            text-align: center;
           }
         }
 
         .promo{
           margin-bottom: 5px;
+          @media #{$mobile}{
+            text-align: center;
+          }
         }
 
         .venue-container{
@@ -199,6 +232,11 @@ body {
 
   .flex-control-nav{
     display: none;
+  }
+  .flex-direction-nav{
+    @media #{$mobile}{
+      display: none;
+    }
   }
 }
 
@@ -309,17 +347,31 @@ body {
     float: left;
     width: 303px;
     color:black;
+    @media #{$normal}{
+      width:180px;
+    }
+    @media #{$small}{
+      width:283px;
+    }
+    @media #{$mobile}{
+      width:325px;
+      border-right: 5px solid $lightblue;
+    }
     .content{
       border:1px solid $lightblue;
       border-left:5px solid $lightblue;
       border-right: 0px;
       text-align: center;
       padding:10px 10px 8px;
+
     }
   }
   .jp-audio{
     float: left;
-
+    @media #{$mobile}{
+      width:325px;
+      overflow: hidden;
+    }
 
     .jp-details{
       display: none;
@@ -446,6 +498,9 @@ body {
   background: -moz-linear-gradient(#fff, #999);
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);
+  @media #{$mobile}{
+    width:320px;
+  }
 }
 
 .close {

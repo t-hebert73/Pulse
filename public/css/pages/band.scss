@@ -22,6 +22,13 @@
 
   .row{
     padding-left: 23.5%;
+    @media #{$small}{
+      padding-left:50px;
+    }
+    @media #{$mobile}{
+      padding-left:30px;
+    }
+
 
     .patrick-container, .max-container{
       padding-right: 20px;
