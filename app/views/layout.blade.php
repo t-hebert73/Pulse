@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pulse Band</title>
+    <title>Pulse Band - Pulseband.ca - Pulse</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -65,11 +65,8 @@
         </div><!--/.nav-collapse -->
 
         <div class="contact-container">
-<<<<<<< HEAD
             <br>
-=======
             <div class="email">contact@pulseband.ca</div>
->>>>>>> 57d86bbec3a966ad796e99d0d9194d2d63c8fe82
             <a href="contact" class="button blue btn">Book A Gig</a>
         </div>
     </div>

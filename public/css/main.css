@@ -274,7 +274,6 @@ body {
   border: solid;
   text-align: center;
   display: inline-block;
-  margin-right: 20px;
   height: 300px;
   width: 300px;
   box-shadow: 10px 10px 5px #888888;
@@ -282,9 +281,6 @@ body {
   .bio a {
     color: black;
     font-weight: bold; }
-
-.marginLeft {
-  margin-left: 25%; }
 
 .modalDialog {
   position: fixed;
@@ -337,3 +333,19 @@ body {
 
 .close:hover {
   background: #00d9ff; }
+
+.the-band-page img {
+  width: 294px;
+  height: 295px;
+  background-size: cover; }
+.the-band-page .band-member {
+  display: inline-block;
+  float: left; }
+  .the-band-page .band-member .name {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px; }
+.the-band-page .row {
+  padding-left: 23.5%; }
+  .the-band-page .row .patrick-container, .the-band-page .row .max-container {
+    padding-right: 20px; }
