@@ -65,7 +65,6 @@
         </div><!--/.nav-collapse -->
 
         <div class="contact-container">
-            <br>
             <div class="email">contact@pulseband.ca</div>
             <a href="contact" class="button blue btn">Book A Gig</a>
         </div>

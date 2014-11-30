@@ -96,7 +96,7 @@ body {
   .contact-container .email {
     color: white;
     font-size: 14px;
-    margin-top: 5px; }
+    margin-top: 10px; }
   .contact-container a.button {
     font-size: 16px;
     float: right;
@@ -127,6 +127,9 @@ body {
     .flexslider li .promo-container .content .promo-title {
       margin-top: 0px;
       margin-bottom: 20px; }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .flexslider li .promo-container .content .promo-title {
+          font-size: 28px; } }
     .flexslider li .promo-container .content .promo {
       margin-bottom: 5px; }
     .flexslider li .promo-container .content .venue-container {

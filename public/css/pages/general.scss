@@ -127,7 +127,7 @@ body {
   .email{
     color:white;
     font-size:14px;
-    margin-top:5px;
+    margin-top:10px;
   }
 
   a.button{
@@ -176,6 +176,10 @@ body {
         .promo-title{
           margin-top:0px;
           margin-bottom:20px;
+
+          @media #{$small}{
+            font-size:28px;
+          }
         }
 
         .promo{
