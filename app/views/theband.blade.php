@@ -11,9 +11,10 @@
                     <!-- Patrick Shea's Bio -->
                     <div class="patrick-container band-member">
                         <div class="bio">
-                            <a href="#openModalPat"><img src="images/band/pat.jpg" /></a>
+                            <a class="patrick-link link" href="#openModalPat"></a>
                         </div>
                         <h2 class="patrick-shea name">Patrick Shea</h2>
+
                         <div id="openModalPat" class="modalDialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
@@ -40,7 +41,7 @@
                     <!-- Marcus Gazzellone's Bio -->
                     <div class="marcus-container band-member">
                         <div class="bio">
-                            <a href="#openModalMarcus"><img src="images/band/marcus.jpg" /></a>
+                            <a class="marcus-link link" href="#openModalMarcus"></a>
                         </div>
                         <h2 class="marcus-gazzellone name">Marcus Gazzellone</h2>
                         <div id="openModalMarcus" class="modalDialog">
@@ -74,7 +75,7 @@
                     <!-- Max Saglimbeni's Bio -->
                     <div class="max-container band-member">
                         <div class="bio">
-                            <a href="#openModalMax"><img src="images/band/max.jpg" /></a>
+                            <a class="max-link link" href="#openModalMax"></a>
                         </div>
                         <h2 class="max-saglimbeni name">Max Saglimbeni</h2>
                         <div id="openModalMax" class="modalDialog">
@@ -105,7 +106,7 @@
                     <!-- Trevor Hebert's Bio -->
                     <div class="trevor-container band-member">
                         <div class="bio">
-                            <a href="#openModalTrevor"><img src="images/band/trevor.jpg" /></a>
+                            <a class="trevor-link link" href="#openModalTrevor"></a>
                         </div>
                         <h2 class="trevor-hebert name">Trevor Hebert</h2>
                         <div id="openModalTrevor" class="modalDialog">

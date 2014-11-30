@@ -1,8 +1,8 @@
 .the-band-page{
   img{
-    width: 294px;
+    width: 393px;
     height: 295px;
-    background-size: cover;
+    background-size: contain;
   }
 
   .band-member{
@@ -24,4 +24,29 @@
     }
   }
 
+  .bio{
+    overflow: hidden;
+
+    .link{
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 295px;
+      width: 295px;
+      display: block;
+
+    }
+
+    .marcus-link{
+      background-image: url('../../images/band/marcus.JPG');
+    }
+    .max-link{
+      background-image: url('../../images/band/max.JPG');
+    }
+    .patrick-link{
+      background-image: url('../../images/band/pat.JPG');
+    }
+    .trevor-link{
+      background-image: url('../../images/band/trevor.JPG');
+    }
+  }
 }
