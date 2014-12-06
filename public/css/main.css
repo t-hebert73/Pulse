@@ -27,6 +27,14 @@ body {
 
 .navbar-collapse {
   float: left; }
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      width: 100%;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      padding: 0px !important;
+      overflow: visible !important;
+      max-height: 369px; } }
   .navbar-collapse .nav.navbar-nav li a {
     text-align: center;
     padding: 35px 25px; }
@@ -63,6 +71,13 @@ body {
 .starter-template {
   padding: 15px 0; }
 
+@media (max-width: 767px) {
+  .main-content {
+    width: 348px; } }
+@media (max-width: 767px) {
+  .main-content p {
+    text-align: center; } }
+
 .pulse-logo {
   width: 260px;
   margin: auto; }
@@ -93,10 +108,13 @@ body {
 
 .contact-container {
   float: right; }
+  @media (max-width: 767px) {
+    .contact-container {
+      display: none; } }
   .contact-container .email {
     color: white;
     font-size: 14px;
-    margin-top: 5px; }
+    margin-top: 10px; }
   .contact-container a.button {
     font-size: 16px;
     float: right;
@@ -113,6 +131,9 @@ body {
 .flexslider li .image {
   float: left;
   width: 25%; }
+  @media (max-width: 767px) {
+    .flexslider li .image {
+      display: none; } }
   .flexslider li .image img {
     border: 3px solid white;
     height: 100%;
@@ -122,19 +143,32 @@ body {
   width: 75%;
   float: left;
   color: white; }
+  @media (max-width: 767px) {
+    .flexslider li .promo-container {
+      width: 100%; } }
   .flexslider li .promo-container .content {
     padding: 10px 20px; }
     .flexslider li .promo-container .content .promo-title {
       margin-top: 0px;
       margin-bottom: 20px; }
+      @media (max-width: 979px) {
+        .flexslider li .promo-container .content .promo-title {
+          font-size: 28px;
+          text-align: center; } }
     .flexslider li .promo-container .content .promo {
       margin-bottom: 5px; }
+      @media (max-width: 767px) {
+        .flexslider li .promo-container .content .promo {
+          text-align: center; } }
     .flexslider li .promo-container .content .venue-container {
       float: left; }
     .flexslider li .promo-container .content .attendance-container {
       float: right; }
 .flexslider .flex-control-nav {
   display: none; }
+@media (max-width: 767px) {
+  .flexslider .flex-direction-nav {
+    display: none; } }
 
 .clear {
   clear: both; }
@@ -201,6 +235,16 @@ body {
     float: left;
     width: 303px;
     color: black; }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      .song-container .song-info {
+        width: 180px; } }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .song-container .song-info {
+        width: 283px; } }
+    @media (max-width: 767px) {
+      .song-container .song-info {
+        width: 325px;
+        border-right: 5px solid #519cd0; } }
     .song-container .song-info .content {
       border: 1px solid #519cd0;
       border-left: 5px solid #519cd0;
@@ -209,6 +253,10 @@ body {
       padding: 10px 10px 8px; }
   .song-container .jp-audio {
     float: left; }
+    @media (max-width: 767px) {
+      .song-container .jp-audio {
+        width: 325px;
+        overflow: hidden; } }
     .song-container .jp-audio .jp-details {
       display: none; }
 
@@ -311,6 +359,9 @@ body {
   background: -moz-linear-gradient(white, #999999);
   background: -webkit-linear-gradient(white, #999999);
   background: -o-linear-gradient(white, #999999); }
+  @media (max-width: 767px) {
+    .modalDialog > div {
+      width: 320px; } }
 
 .close {
   background: #606061;
@@ -349,6 +400,12 @@ body {
     color: #519cd0; }
 .the-band-page .row {
   padding-left: 23.5%; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .the-band-page .row {
+      padding-left: 50px; } }
+  @media (max-width: 767px) {
+    .the-band-page .row {
+      padding-left: 30px; } }
   .the-band-page .row .patrick-container, .the-band-page .row .max-container {
     padding-right: 20px; }
 .the-band-page .bio {
