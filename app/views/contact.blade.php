@@ -4,7 +4,7 @@
 <h1 class="page-title">Contact Us</h1>
 
 <div class="container">
-    <div class="mainbar">
+    <div class="mainbar contact">
         <table class="col-sm-6">
             <tr>
                 <th>Have Any Questions?</th>

@@ -7,6 +7,28 @@
         <div class="flexslider">
             <ul class="slides">
                 <li>
+                    <a href="theband">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="images/pulseonstage.jpg" />
+                            </div>
+
+                        </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title">First Show! - Mahtay Cafe</h1>
+                                <p class="promo">Pulse has played their first show at Mahtay Cafe located in St Catharines!</p>
+
+                                <div class="clear"></div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </a>
+                </li>
+                <li>
                     <a href="media">
                         <div class="image">
                             <img src="images/studio.jpg" />
@@ -47,6 +69,7 @@
         </div>
     </div>
 </div>
+
 <div class="container">
 
 <div class="row">

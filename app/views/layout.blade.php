@@ -77,7 +77,7 @@
     <div class="container">
         <div class="secret-social-icons">
             <div class="t icon" ></div>
-            <div class="f icon" ></div>
+            <div class="f icon" ><a href="https://www.facebook.com/pages/Pulse/1433601266925408" target="_blank"></a></div>
             <div class="y icon" ></div>
         </div>
         Copyright <?php echo date('Y'); ?>

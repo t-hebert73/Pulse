@@ -88,6 +88,11 @@ body {
     background-size: 38px 38px;
     width:38px;
     height: 38px;
+
+    a{
+      display: block;
+      height: 100%;
+    }
   }
   .y{
     background-image: url('../images/y_icon.png');
@@ -135,6 +140,16 @@ body {
 .mainbar{
   margin-bottom: 25px;
   margin-top: 25px;
+  min-height: 435px;
+}
+
+.mainbar.contact{
+  min-height: 585px;
+}
+
+.mainbar.media{
+  min-height: 585px;
+  margin-top:25px;
 }
 
 .sidebar{
@@ -180,6 +195,7 @@ body {
     .image{
       float: left;
       width:25%;
+      height:200px;
       @media #{$mobile} {
         display: none;
       }
@@ -187,8 +203,6 @@ body {
       img{
         border:3px solid white;
         height:100%;
-        max-width: 80%;
-        margin-left:30px;
       }
     }
     .promo-container{
@@ -242,6 +256,23 @@ body {
 
 .clear{
   clear:both;
+}
+
+//home
+
+.last-show-container{
+  background-color: $lightblue;
+  color:white;
+}
+
+.last-show{
+  padding:15px;
+  font-size:24px;
+  text-align: center;
+  .last-show-label{
+  }
+  .last-show-location{
+  }
 }
 
 //shows page
