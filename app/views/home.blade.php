@@ -102,8 +102,7 @@
                 <div class="show">
                     <p class="show-date">Sunday January 18th, 2015</p>
                     <p class="show-time">6:00pm</p>
-                    <p class="show-location">Mahtay Cafe</p>
-                    <p class="show-info">Private Event</p>
+                    <p class="show-location">Private Function</p>
                 </div>
 
             </div>
