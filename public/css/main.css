@@ -107,6 +107,15 @@ body {
   margin-top: 25px;
   min-height: 435px; }
 
+.line {
+  height: 1px;
+  width: 75%;
+  background-color: grey;
+  margin: 25px auto; }
+
+.shows {
+  text-align: center; }
+
 .mainbar.contact {
   min-height: 585px; }
 

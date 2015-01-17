@@ -74,7 +74,7 @@
 
 <div class="row">
 
-    <div class="mainbar col-md-12">
+    <div class="mainbar col-md-8">
         <div class="main-content">
             <div class="pulse-logo">
                 <img src="images/pulse.jpg" alt="Pulse Logo" title="Pulse" />
@@ -87,20 +87,42 @@
         </div>
     </div>
 
-    <!--<div class="sidebar col-md-4">
+    <div class="sidebar col-md-4">
 
-        <div class="twitter-feed-container">
+        <!--<div class="twitter-feed-container">
             <a class="twitter-timeline" height="320" href="https://twitter.com/StarCraft" data-theme="dark" data-widget-id="487770098212421633">Tweets by @StarCraft</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>-->
 
+        <div class="shows">
 
+            <div class="upcoming-shows">
+                <h2>Upcoming Shows</h2>
+
+                <div class="show">
+                    <p class="show-date">Sunday January 18th, 2015</p>
+                    <p class="show-time">6:00pm</p>
+                    <p class="show-location">Mahtay Cafe</p>
+                    <p class="show-info">Private Event</p>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="past-shows">
+                <h2>Past Shows</h2>
+
+                <p class="show-date">December 13th, 2014</p>
+                <p class="show-time">7:00pm</p>
+                <p class="show-location">Mahtay Cafe</p>
+            </div>
 
         </div>
 
 
 
-
-    </div>-->
+    </div>
 
 
 </div>
