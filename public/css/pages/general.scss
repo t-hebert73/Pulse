@@ -1,4 +1,12 @@
 body {
+  .container.home{
+    min-height: 524px;
+  }
+
+  .blue{
+    color: $lightblue;
+  }
+
   padding-top: 100px;
 
   font-size:16px;
@@ -143,9 +151,6 @@ body {
   min-height: 435px;
 }
 
-.past-shows{
-}
-
 .line{
   height:1px;
   width:75%;
@@ -155,6 +160,18 @@ body {
 
 .shows{
   text-align: center;
+
+  .bold-text{
+    font-weight: bold;
+    color: $lightblue;
+  }
+
+  p{
+    line-height: 10px;
+  }
+  h2{
+    margin-bottom: 20px !important;
+  }
 }
 
 .mainbar.contact{

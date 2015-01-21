@@ -1,6 +1,10 @@
 body {
   padding-top: 100px;
   font-size: 16px; }
+  body .container.home {
+    min-height: 524px; }
+  body .blue {
+    color: #519cd0; }
   body p, body div, body span {
     font-family: 'Roboto', sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -115,6 +119,13 @@ body {
 
 .shows {
   text-align: center; }
+  .shows .bold-text {
+    font-weight: bold;
+    color: #519cd0; }
+  .shows p {
+    line-height: 10px; }
+  .shows h2 {
+    margin-bottom: 20px !important; }
 
 .mainbar.contact {
   min-height: 585px; }

@@ -70,7 +70,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container home">
 
 <div class="row">
 
@@ -84,6 +84,14 @@
                 Welcome to the Pulse Band website. We're a fresh new band in the Niagara region looking to bring the Motown/Funk/Soul genres back in style.
                 This website is still under development, more content soon to come.
             </p>
+
+            <p><strong>Pulse is playing at the Mahtay Cafe <span class="bold-text blue">January 30th @ 7:00pm</span> located at 241 St. Paul Street,
+            St. Catharines. Come on out and show your support!</strong></p>
+
+            <br>
+
+            <strong><em>Follow us on <a target="_blank" href="https://www.facebook.com/pages/Pulse/1433601266925408">Facebook</a> and check out our media page
+            for some recorded demos!</em></strong>
         </div>
     </div>
 
@@ -100,9 +108,8 @@
                 <h2>Upcoming Shows</h2>
 
                 <div class="show">
-                    <p class="show-date">Sunday January 18th, 2015</p>
-                    <p class="show-time">6:00pm</p>
-                    <p class="show-location">Private Function</p>
+                    <p class="show-date">Friday January 30th, 2015</p>
+                    <p class="show-location">Mahtay Cafe @ <span class="bold-text">7:00pm</span></p>
                 </div>
 
             </div>
@@ -112,9 +119,13 @@
             <div class="past-shows">
                 <h2>Past Shows</h2>
 
-                <p class="show-date">December 13th, 2014</p>
-                <p class="show-time">7:00pm</p>
-                <p class="show-location">Mahtay Cafe</p>
+                <p class="show-date">Sunday January 18th, 2015</p>
+                <p class="show-location">Private Function @ <span class="bold-text">7:00pm</span></p>
+
+                <br>
+
+                <p class="show-date">Sunday December 14th, 2014</p>
+                <p class="show-location">Mahtay Cafe @ <span class="bold-text">7:00pm</span></p>
             </div>
 
         </div>
