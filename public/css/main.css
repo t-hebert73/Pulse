@@ -125,7 +125,8 @@ body {
   .shows p {
     line-height: 10px; }
   .shows h2 {
-    margin-bottom: 20px !important; }
+    margin-bottom: 20px !important;
+    margin-top: 20px; }
 
 .mainbar.contact {
   min-height: 585px; }
