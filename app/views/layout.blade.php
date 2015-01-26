@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pulse Band - Pulseband.ca - Pulse</title>
+
+    <title>Pulse Band Niagara - Pulseband.ca</title>
+    <meta name="description" content="Pulse is a fresh new band in the Niagara region looking to bring the Motown/Funk/Soul genres back in style.">
+    <meta name="keywords" content="Pulse, Band, Niagara, Motown, New">
+    <meta name="author" content="Pulse Niagara">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -42,43 +46,45 @@
 </head>
 <body>
 
-<div class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<header>
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            <a class="navbar-brand" href="/"><img class="logo" src="images/Pulse400x400.png" /></a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="theband">The Band</a></li>
-                <!--<li><a href="shows">Shows</a></li>-->
-                <li><a href="media">Media</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+                <a class="navbar-brand" href="/"><img class="logo" alt="Pulse Band Logo" title="Pulse New Niagara Band" src="images/Pulse400x400.png" /></a>
+            </div>
+            <nav class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="theband">The Band</a></li>
+                    <!--<li><a href="shows">Shows</a></li>-->
+                    <li><a href="media">Media</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav><!--/.nav-collapse -->
 
-        <div class="contact-container">
-            <div class="email">contact@pulseband.ca</div>
-            <a href="contact" class="button blue btn">Book A Gig</a>
+            <div class="contact-container">
+                <div class="email">contact@pulseband.ca</div>
+                <a href="contact" class="button blue btn">Book A Gig</a>
+            </div>
         </div>
     </div>
-</div>
+</header>
+
 
     @yield('content')
 
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <div class="container">
         <div class="secret-social-icons">
-            <div class="t icon" ></div>
-            <div class="f icon" ><a href="https://www.facebook.com/pages/Pulse/1433601266925408" target="_blank"></a></div>
-            <div class="y icon" ></div>
+            <!--<div class="t icon" ></div>-->
+            <div class="f icon" ><a href="https://www.facebook.com/pages/Pulse/1433601266925408" target="_blank" title="Pulse on Facebook"></a></div>
+            <div class="y icon" ><a href="https://www.youtube.com/channel/UC1voaUJaImOZD51PF0yl6VA" target="_blank" title="Pulse on Youtube"></a></div>
         </div>
         Copyright <?php echo date('Y'); ?>
     </div>

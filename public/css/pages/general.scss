@@ -84,6 +84,11 @@ body {
   margin-bottom: 5px;
   .icon{
     display: inline-block;
+
+    a{
+      display: block;
+      height: 100%;
+    }
   }
   .t{
     background-image: url('../images/t_icon.png');
@@ -96,11 +101,6 @@ body {
     background-size: 38px 38px;
     width:38px;
     height: 38px;
-
-    a{
-      display: block;
-      height: 100%;
-    }
   }
   .y{
     background-image: url('../images/y_icon.png');

@@ -15,7 +15,7 @@
                         </div>
                         <h2 class="patrick-shea name">Patrick Shea - <span>Vocals</span></h2>
 
-                        <div id="openModalPat" class="modalDialog">
+                        <div id="openModalPat" class="modalDialog" role="dialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
                                 <h3>Patrick Shea</h3>
@@ -44,7 +44,7 @@
                             <a class="marcus-link link" href="#openModalMarcus"></a>
                         </div>
                         <h2 class="marcus-gazzellone name">Marcus Gazzellone - <span>Drums</span></h2>
-                        <div id="openModalMarcus" class="modalDialog">
+                        <div id="openModalMarcus" class="modalDialog" role="dialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
                                 <h3>Marcus Gazzellone</h3>
@@ -78,7 +78,7 @@
                             <a class="max-link link" href="#openModalMax"></a>
                         </div>
                         <h2 class="max-saglimbeni name">Max Saglimbeni - <span>Bass</span></h2>
-                        <div id="openModalMax" class="modalDialog">
+                        <div id="openModalMax" class="modalDialog" role="dialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
                                 <h3>Max Saglimbeni</h3>
@@ -109,7 +109,7 @@
                             <a class="trevor-link link" href="#openModalTrevor"></a>
                         </div>
                         <h2 class="trevor-hebert name">Trevor Hebert - <span>Guitar</span></h2>
-                        <div id="openModalTrevor" class="modalDialog">
+                        <div id="openModalTrevor" class="modalDialog" role="dialog">
                             <div>
                                 <a href="#close" title="Close" class="close">X</a>
                                 <h3>Trevor Hebert</h3>
