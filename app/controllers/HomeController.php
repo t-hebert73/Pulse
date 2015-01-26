@@ -17,10 +17,7 @@ class HomeController extends BaseController {
 
     public function showHome(){
 
-        //grab tweets and pass to view
-        $twitterObject = new TwitterHandler();
-        $twitter = $twitterObject->getTweets();
-        return View::make('home')->with('objects', $twitter);
+        return View::make('home')->with('objects');
     }
 
 }

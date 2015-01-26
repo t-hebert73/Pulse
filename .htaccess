@@ -1,0 +1,9 @@
+<Files .htaccess>
+    deny from all
+</Files>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pulseband.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.pulseband.com$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
