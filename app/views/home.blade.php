@@ -7,10 +7,10 @@
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <a href="theband">
+                    <a href="theband" title="About The Band">
                         <div class="image-container">
                             <div class="image">
-                                <img src="images/pulseonstage.jpg" />
+                                <img alt="Pulse on stage" title="Pulse at Mahtay Cafe" src="images/pulseonstage.jpg" />
                             </div>
 
                         </div>
@@ -29,9 +29,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="media">
+                    <a href="media" title="Listen to Pulse">
                         <div class="image">
-                            <img src="images/studio.jpg" />
+                            <img alt="Pulse Studio" title="Pulse Home Studio" src="images/studio.jpg" />
                         </div>
                         <div class="promo-container">
                             <div class="content">
@@ -49,9 +49,9 @@
                 </li>
 
                 <li>
-                    <a href="contact">
+                    <a href="contact" title="Contact Pulse">
                         <div class="image">
-                            <img src="images/pulse.jpg" />
+                            <img alt="Pulse Band Logo" title="Pulse Niagara" src="images/pulse.jpg" />
                         </div>
                         <div class="promo-container">
                             <div class="content">
@@ -90,7 +90,7 @@
 
             <br>
 
-            <strong><em>Follow us on <a target="_blank" href="https://www.facebook.com/pages/Pulse/1433601266925408">Facebook</a> and check out our media page
+            <strong><em>Follow us on <a target="_blank" href="https://www.facebook.com/pages/Pulse/1433601266925408" title="Pulse on Facebook">Facebook</a> and check out our media page
             for some recorded demos!</em></strong>
         </div>
     </div>
