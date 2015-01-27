@@ -85,7 +85,7 @@
                 This website is still under development, more content soon to come.
             </p>
 
-            <p><strong>Pulse is playing at the Mahtay Cafe <span class="bold-text blue">January 30th @ 7:00pm</span> located at 241 St. Paul Street,
+            <p><strong>Pulse is playing at the Mahtay Cafe <span class="bold-text blue">January 30th @ 8:00pm</span> located at 241 St. Paul Street,
             St. Catharines. Come on out and show your support!</strong></p>
 
             <br>
@@ -109,7 +109,7 @@
 
                 <div class="show">
                     <p class="show-date">Friday January 30th, 2015</p>
-                    <p class="show-location">Mahtay Cafe @ <span class="bold-text">7:00pm</span></p>
+                    <p class="show-location">Mahtay Cafe @ <span class="bold-text">8:00pm</span></p>
                 </div>
 
             </div>
