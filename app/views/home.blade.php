@@ -100,7 +100,7 @@
         </div>-->
 
         <div class="shows">
-
+            
             <div class="past-shows">
                 <h2>Past Shows</h2>
 
