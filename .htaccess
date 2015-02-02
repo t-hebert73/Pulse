@@ -7,8 +7,8 @@
 RewriteEngine On
 
 # 301 rewrite non www. to www.
-RewriteCond %{HTTP_HOST} ^50\.116\.52\.142
 RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTP_HOST} ^50\.116\.52\.142
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # Redirect Trailing Slashes...
