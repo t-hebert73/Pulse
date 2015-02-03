@@ -5,8 +5,8 @@
 <div class="container">
 <div class=starter-template">
 
-    <h1 style="text-align:center">About the band</h1>
-    <p style="text-align: center">
+    <h1>About the band</h1>
+    <p>
         We are the leading Motown/Funk band of Niagara. Here to kick ass and chew bubblegum. Kappa
     </p>
 
