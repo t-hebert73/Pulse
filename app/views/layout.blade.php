@@ -10,6 +10,10 @@
     <meta name="keywords" content="Pulse, Band, Niagara, Motown, New">
     <meta name="author" content="Pulse Niagara">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 

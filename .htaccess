@@ -1,21 +1,40 @@
-
-<IfModule mod_rewrite.c>
-<IfModule mod_negotiation.c>
-    Options -MultiViews
-</IfModule>
+# ----------------------------------------------------------------------
+# ROOT/ folder .htaccess
+# ----------------------------------------------------------------------
+# Laravel Note:
+# Note: Laravel is designed to protect your application code,
+# and local storage by placing only files that are necessarily
+# public in the public folder. It is recommended that you either
+# set the public folder as your site's documentRoot (also known as a web root)
+# or to place the contents of public into your site's root directory
+# and place all of Laravel's other files outside the web root.
+# ----------------------------------------------------------------------
+# If you have no idea or no possibility to edit server's
+# settings (for example at shared hosting) -  This .htaccess file
+# will do all work for you.
+# Just place it into /root folder of your Laravel powered application
+# ----------------------------------------------------------------------
+# This file works with Laravel 3 and 4
+# ----------------------------------------------------------------------
+# This .htaccess file is recommended
+# to be placed into /root folder of
+# your Laravel powered application
+# ----------------------------------------------------------------------
 
 RewriteEngine On
 
-# 301 rewrite non www. to www.
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteCond %{HTTP_HOST} ^50\.116\.52\.142
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond /public/%{REQUEST_URI} -d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /public/$1/
 
-# Redirect Trailing Slashes...
-RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-# Handle Front Controller...
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/public/
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [L]
-</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/$1
+
+RewriteBase /
+RewriteRule ^(/)?$ /public/index.php [L]
+
