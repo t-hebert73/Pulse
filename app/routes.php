@@ -11,35 +11,65 @@
 |
 */
 
-//GET CONTACT
+/*
+|--------------------------------------------------------------------------
+| Get Routes
+|--------------------------------------------------------------------------
+*/
+
+/*
+ * Home/Default
+ */
+
+Route::get('/','HomeController@showHome');
+
+/*
+ * Contact
+ */
 Route::get('contact', function()
 {
     return View::make('contact');
 });
 
-//POST CONTACT
-Route::post('contact', 'ContactController@ContactUsForm');
-
-//GET emailSuccess
+/*
+ * Email Success
+ */
 Route::get('emailSuccess', function(){
     return View::make('emailSuccess');
 });
 
+/*
+ * The Band
+ */
 Route::get('theband', function()
 {
     return View::make('theband');
 });
+
+/*
+ *  Media
+ */
 
 Route::get('media', function()
 {
     return View::make('media');
 });
 
+/*
+ * Shows
+ */
 Route::get('shows', function()
 {
     return View::make('shows');
 });
 
+/*
+|--------------------------------------------------------------------------
+| Post Routes
+|--------------------------------------------------------------------------
+*/
 
-Route::get('/','HomeController@showHome');
-
+/*
+ * Contact
+ */
+Route::post('contact', 'ContactController@ContactUsForm');
