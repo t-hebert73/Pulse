@@ -11,6 +11,8 @@
 |
 */
 
+
+
 ClassLoader::addDirectories(array(
 
 	app_path().'/commands',
@@ -20,6 +22,18 @@ ClassLoader::addDirectories(array(
     app_path().'/classes',
 
 ));
+
+/*
+|--------------------------------------------------------------------------
+| General Functions
+|--------------------------------------------------------------------------
+|
+| Here we will require the general functions file so we can use the functions
+|
+*/
+
+require app_path().'/libraries/general_functions.php';
+
 
 /*
 |--------------------------------------------------------------------------
