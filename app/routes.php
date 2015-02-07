@@ -56,6 +56,14 @@ Route::get('media', function()
 });
 
 /*
+ * Gallery
+ */
+Route::get('gallery', function()
+{
+    return View::make('gallery');
+});
+
+/*
  * Shows
  */
 Route::get('shows', function()

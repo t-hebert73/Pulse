@@ -47,8 +47,18 @@
     <link type="text/css" href="/css/vendor/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
     <script type="text/javascript" src="/js/jplayer/jquery.jplayer.min.js"></script>
 
+    <!-- Custom -->
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+    <?php
+        //Get the current page name
+        global $currentPage;
+        $currentPage = basename($_SERVER['PHP_SELF']);
+    ?>
+
 </head>
-<body>
+<!-- Body with page class -->
+<body class="<?php echo $currentPage."-page"; ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">
@@ -68,6 +78,7 @@
                     <li><a href="theband">The Band</a></li>
                     <!--<li><a href="shows">Shows</a></li>-->
                     <li><a href="media">Media</a></li>
+                    <li><a href="gallery">Gallery</a></li>
                     <li><a href="contact">Contact</a></li>
                 </ul>
             </nav><!--/.nav-collapse -->

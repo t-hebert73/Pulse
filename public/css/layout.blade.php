@@ -39,6 +39,7 @@
     <link type="text/css" href="/css/vendor/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
     <script type="text/javascript" src="/js/jplayer/jquery.jplayer.min.js"></script>
 
+
 </head>
 <body>
 
