@@ -1,3 +1,31 @@
 body.gallery-page{
 
+  .modal-body{
+    img{
+      width: 560px;
+      height: 400px;
+    }
+  }
+
+  .row{
+    margin: 0px;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+  .gallery-container{
+    .img-box{
+      height: 185px;
+      border: 1px solid black;
+      margin-right: 10px;
+    }
+    .img-box.last{
+      margin-right: 0px;
+    }
+    .img-box.first{
+      margin-left: 76px;
+    }
+  }
 }
