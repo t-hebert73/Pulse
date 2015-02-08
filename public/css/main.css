@@ -475,10 +475,17 @@ body.gallery-page .row {
 body.gallery-page .clear {
   clear: both; }
 body.gallery-page .gallery-container .img-box {
-  height: 185px;
-  border: 1px solid black;
-  margin-right: 10px; }
+  width: 24%;
+  float: left;
+  height: 212px;
+  margin-right: 10px;
+  padding: 0px;
+  border: 3px solid #519cd0;
+  margin-bottom: 10px; }
+  body.gallery-page .gallery-container .img-box a img {
+    width: 268px;
+    height: 206px; }
 body.gallery-page .gallery-container .img-box.last {
   margin-right: 0px; }
 body.gallery-page .gallery-container .img-box.first {
-  margin-left: 76px; }
+  margin-left: 8px; }

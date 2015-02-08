@@ -17,15 +17,26 @@ body.gallery-page{
 
   .gallery-container{
     .img-box{
-      height: 185px;
-      border: 1px solid black;
+      width: 24%;
+      float: left;
+      height: 212px;
       margin-right: 10px;
+      padding: 0px;
+      border: 3px solid $lightblue;
+      margin-bottom: 10px;
+
+      a{
+        img{
+          width: 268px;
+          height: 206px;
+        }
+      }
     }
     .img-box.last{
       margin-right: 0px;
     }
     .img-box.first{
-      margin-left: 76px;
+      margin-left: 8px;
     }
   }
 }
