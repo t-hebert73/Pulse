@@ -16,7 +16,8 @@ class AdminController extends BaseController {
 	*/
 
     public function showAdminPanel(){
-        return View::make('adminPanel');
+
+		return View::make('adminPanel');
     }
 
 }
