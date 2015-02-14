@@ -75,7 +75,18 @@ Route::get('shows', function()
  * Admin Panel
  */
 
-Route::get('admin', 'AdminController@showAdminPanel');
+Route::get('admin', array('before' => 'auth', 'uses' => 'AdminController@showAdminPanel'));
+
+
+/*
+ * Login
+ */
+
+Route::get('login', function()
+{
+   return View::make('login');
+});
+
 
 /*
 |--------------------------------------------------------------------------
@@ -87,3 +98,9 @@ Route::get('admin', 'AdminController@showAdminPanel');
  * Contact
  */
 Route::post('contact', 'ContactController@ContactUsForm');
+
+/*
+ * Login
+ */
+
+Route::post('login', 'LoginController@attemptLogin');

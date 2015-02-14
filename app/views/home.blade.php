@@ -89,6 +89,13 @@
 
             <strong><em>Follow us on <a target="_blank" href="https://www.facebook.com/pages/Pulse/1433601266925408" title="Pulse on Facebook">Facebook</a> and check out our media page
             for some recorded demos!</em></strong>
+
+            <?php
+
+                 Auth::logout();
+                echo Auth::id();
+
+                ?>
         </div>
     </div>
 
