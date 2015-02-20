@@ -21,11 +21,15 @@ class ShowsController extends BaseController {
     }
 
 	public function showAddAShow(){
+
 		return View::make('adminAddShow');
+		
 	}
 
 	public function showRemoveAShow(){
+
 		return View::make('adminRemoveShow');
+
 	}
 
 }
