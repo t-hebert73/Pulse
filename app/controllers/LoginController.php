@@ -31,7 +31,6 @@ class LoginController extends BaseController {
 
         if (Auth::attempt($inputtedCredentials))
         {
-            echo 'success atempt';
             return Redirect::intended('adminPanel');
         }else{
             return View::make('login');

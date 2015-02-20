@@ -58,11 +58,17 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="/"><img class="logo" alt="Pulse Band Logo" title="Pulse New Niagara Band" src="images/Pulse400x400.png" /></a>
+                <a class="navbar-brand" href="/"><img class="logo" alt="Pulse Band Logo" title="Pulse New Niagara Band" src="/images/Pulse400x400.png" /></a>
             </div>
             <nav class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="admin/shows">Add/Remove Shows</a></li>
+                <ul class="nav navbar-nav admin-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shows <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/admin/shows/add">Add</a></li>
+                            <li><a href="/admin/shows/remove">Remove</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!--/.nav-collapse -->
 

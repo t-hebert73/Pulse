@@ -51,6 +51,14 @@ body {
   .navbar-collapse .nav.navbar-nav li a {
     text-align: center;
     padding: 35px 25px; }
+  .navbar-collapse .nav.navbar-nav li a:focus {
+    background-color: #519CD0; }
+  .navbar-collapse .nav.navbar-nav ul.dropdown-menu li a {
+    padding: 10px; }
+  .navbar-collapse .nav.navbar-nav .open > a {
+    background-color: #417DA6; }
+  .navbar-collapse .nav.navbar-nav.admin-nav li a {
+    min-width: 158px; }
 
 .icon-bar {
   background-color: white; }

@@ -87,6 +87,23 @@ Route::get('login', function()
    return View::make('login');
 });
 
+/*
+ * Admin Shows
+ */
+
+Route::get('admin/shows', array('before' => 'auth', 'uses' => 'ShowsController@showShowsPanel'));
+
+/*
+ * Admin Add Shows
+ */
+
+Route::get('admin/shows/add', array('before' => 'auth', 'uses' => 'ShowsController@showAddAShow'));
+
+/*
+ * Admin Remove Shows
+ */
+
+Route::get('admin/shows/remove', array('before' => 'auth', 'uses' => 'ShowsController@showRemoveAShow'));
 
 /*
 |--------------------------------------------------------------------------
