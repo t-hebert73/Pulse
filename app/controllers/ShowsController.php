@@ -49,7 +49,13 @@ class ShowsController extends BaseController {
 
 		if(!empty($date) && !empty($time) && !empty($location)){
 
-			DB::insert("insert into shows (date, time, location) values ('$date','$time','$location')");
+			$show = new Show;
+
+			$show->date = $date;
+			$show->time = $time;
+			$show->location = $location;
+
+			$show->save();
 
 			$data = array(
 				'formStatus' => 'success',

@@ -8,31 +8,47 @@
         <div class="container">
             <div class="row">
 
-                <div class="mainbar col-md-8">
-                    <p>admin stuff is done here so log in first.</p>
+                <div class="mainbar col-md-12">
+
                     <div class="admin-option">
-                        <h2>Add Show</h2>
+                        <a class="option-link" href="admin/shows/add">
+                            <h2>Add Show</h2>
+
+                            <p> Add some shows!</p>
+                        </a>
+
                     </div>
 
                     <div class="admin-option">
-                        <h2>Add Images</h2>
+                        <a class="option-link">
+                            <h2>Add Images</h2>
+
+                            <p> Upload images for Pulse. Can be general images or related to shows.</p>
+                        </a>
                     </div>
 
                     <div class="clear"></div>
 
                     <div class="admin-option">
-                        <h2>Add Songs</h2>
+                        <a class="option-link">
+                            <h2>Add Songs</h2>
+
+                            <p>Upload songs by Pulse.</p>
+                        </a>
+
                     </div>
 
                     <div class="admin-option">
-                        <h2>Do other stuff</h2>
+
+                        <a class="option-link">
+                            <h2>Do other stuff</h2>
+
+                            <p>Other stuff is cool too.</p>
+                        </a>
+
                     </div>
 
                     <div class="clear"></div>
-                </div>
-
-                <div class="sidebar col-md-4">
-
                 </div>
 
 

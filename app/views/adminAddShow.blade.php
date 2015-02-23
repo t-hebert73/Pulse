@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="mainbar col-md-8">
+                <div class="mainbar col-md-4">
 
                     <?php
 

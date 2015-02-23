@@ -68,6 +68,9 @@
             </div>
             <nav class="collapse navbar-collapse">
                 <ul class="nav navbar-nav admin-nav">
+                    <li>
+                        <a href="/admin">Admin</a>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shows <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
