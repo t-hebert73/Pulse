@@ -90,12 +90,6 @@
             <strong><em>Follow us on <a target="_blank" href="https://www.facebook.com/pages/Pulse/1433601266925408" title="Pulse on Facebook">Facebook</a> and check out our media page
             for some recorded demos!</em></strong>
 
-            <?php
-
-                 Auth::logout();
-                echo Auth::id();
-
-                ?>
         </div>
     </div>
 
@@ -104,28 +98,57 @@
         <div class="shows">
 
             <div class="past-shows">
-                <h2>Past Shows</h2>
 
-                <p class="show-date">Friday January 30th, 2015</p>
-                <p class="show-location">Mahtay Cafe @ <span class="bold-text">8:00pm</span></p>
 
-                <br>
+                <?php
 
-                <p class="show-date">Sunday January 18th, 2015</p>
-                <p class="show-location">Private Function @ <span class="bold-text">7:00pm</span></p>
+                    $allShows = Show::all();
 
-                <br>
+                    $upcomingShows = array();
+                    $pastShows = array();
 
-                <p class="show-date">Sunday December 14th, 2014</p>
-                <p class="show-location">Mahtay Cafe @ <span class="bold-text">7:00pm</span></p>
+                    if(!$allShows->isEmpty()){
+                        foreach($allShows as $show){
+                            if(strtotime($show->date) > strtotime('now')){
+                                $upcomingShows[] = $show;
+                            }else{
+                                $pastShows[] = $show;
+                            }
+                        }
+                    }
 
+                    if(!empty($upcomingShows)){ ?>
+                        <h2>Upcoming Shows</h2>
+
+                        <?php
+
+                        foreach($upcomingShows as $show){
+                            $date = date('l F jS, Y',strtotime($show->date));
+                        ?>
+                            <p class="show-date"><?php echo $date; ?></p>
+                            <p class="show-location"><?php echo $show->location; ?> @ <span class="bold-text"><?php echo $show->time; ?></span></p>
+                            <br>
+                        <?php }
+                    }
+
+                    if(!empty($upcomingShows)){ ?>
+                        <h2>Past Shows</h2>
+
+                        <?php
+
+                        foreach($pastShows as $show){
+                            $date = date('l F jS, Y',strtotime($show->date));
+                        ?>
+                            <p class="show-date"><?php echo $date; ?></p>
+                            <p class="show-location"><?php echo $show->location; ?> @ <span class="bold-text"><?php echo $show->time; ?></span></p>
+                            <br>
+                        <?php }
+                    }
+                ?>
 
             </div>
 
         </div>
-
-
-
     </div>
 
 

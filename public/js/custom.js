@@ -32,6 +32,10 @@ $(document).ready(function(){
      *
      */
 
-    $('#date').datepicker();
+    var $date = $('#date');
+    if($date.length){
+        $date.datepicker();
+    }
+
 
 });
