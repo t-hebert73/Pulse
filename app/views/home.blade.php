@@ -103,7 +103,6 @@
                 <?php
 
                     $allShows = Show::all();
-
                     $upcomingShows = array();
                     $pastShows = array();
 
@@ -131,7 +130,7 @@
                         <?php }
                     }
 
-                    if(!empty($upcomingShows)){ ?>
+                    if(!empty($pastShows)){ ?>
                         <h2>Past Shows</h2>
 
                         <?php
