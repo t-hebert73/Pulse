@@ -23,4 +23,15 @@ $(document).ready(function(){
 
         $index++;
     });
+
+
+    /*
+     * add show form
+     *
+     * datepicker
+     *
+     */
+
+    $('#date').datepicker();
+
 });

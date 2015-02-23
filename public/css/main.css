@@ -505,4 +505,8 @@ body.gallery-page .gallery-container .img-box.last {
 body.gallery-page .gallery-container .img-box.first {
   margin-left: 8px; }
 
+.admin-page .admin-option {
+  float: left;
+  width: 50%; }
+
 /*# sourceMappingURL=main.css.map */

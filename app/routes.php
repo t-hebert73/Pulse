@@ -103,7 +103,8 @@ Route::get('admin/shows/add', array('before' => 'auth', 'uses' => 'ShowsControll
  * Admin Remove Shows
  */
 
-Route::get('admin/shows/remove', array('before' => 'auth', 'uses' => 'ShowsController@showRemoveAShow'));
+Route::get('admin/shows/remove/{id}', array('before' => 'auth', 'uses' => 'ShowsController@removeShow'));
+
 
 /*
 |--------------------------------------------------------------------------
@@ -121,3 +122,9 @@ Route::post('contact', 'ContactController@ContactUsForm');
  */
 
 Route::post('login', 'LoginController@attemptLogin');
+
+/*
+ * Add Show
+ */
+
+Route::post('addShow', 'ShowsController@addShow');
