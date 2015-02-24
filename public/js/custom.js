@@ -23,4 +23,19 @@ $(document).ready(function(){
 
         $index++;
     });
+
+
+    /*
+     * add show form
+     *
+     * datepicker
+     *
+     */
+
+    var $date = $('#date');
+    if($date.length){
+        $date.datepicker();
+    }
+
+
 });

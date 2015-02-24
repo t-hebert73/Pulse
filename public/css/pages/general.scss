@@ -65,6 +65,29 @@ body {
         text-align: center;
         padding:35px 25px;
       }
+      a:focus{
+        background-color:$lightblue;
+      }
+    }
+
+    ul.dropdown-menu{
+      li{
+        a{
+          padding: 10px;
+        }
+      }
+    }
+
+    .open>a{
+      background-color:#417DA6;
+    }
+  }
+
+  .nav.navbar-nav.admin-nav{
+    li{
+      a{
+        min-width:158px;
+      }
     }
   }
 }

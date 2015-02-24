@@ -33,19 +33,25 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+    <!-- datePicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    <!-- Flexslider -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="../packages/jquery.flexslider.js"></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="/js/custom.js"></script>
 
-    <!-- jPlayer -->
-    <link type="text/css" href="/css/vendor/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
-    <script type="text/javascript" src="/js/jplayer/jquery.jplayer.min.js"></script>
+    <?php
+    //Get the current page name
+    global $currentPage;
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    ?>
 
 </head>
-<body>
+<!-- Body with page class -->
+<body class="<?php echo $currentPage."-page"; ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">
@@ -58,11 +64,21 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="/"><img class="logo" alt="Pulse Band Logo" title="Pulse New Niagara Band" src="images/Pulse400x400.png" /></a>
+                <a class="navbar-brand" href="/"><img class="logo" alt="Pulse Band Logo" title="Pulse New Niagara Band" src="/images/Pulse400x400.png" /></a>
             </div>
             <nav class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="admin/shows">Add/Remove Shows</a></li>
+                <ul class="nav navbar-nav admin-nav">
+                    <li>
+                        <a href="/admin">Admin</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shows <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/admin/shows">List Shows</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/admin/shows/add">Add</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!--/.nav-collapse -->
 

@@ -21,13 +21,13 @@ return array(
 	'connections' => array(
 
 		'mysql' => array(
+			'host' => '127.0.0.1',
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
 			'database'  => 'pulse',
-			'username'  => 'pulseadmin',
-			'password'  => 'grooveme',
+			'username'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
-			'collation' => 'utf8_general_ci',
+			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
 

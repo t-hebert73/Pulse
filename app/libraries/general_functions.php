@@ -7,6 +7,9 @@
  */
 
 
-function pr($array){
-    print_r('<pre>' . $array . '</pre>');
+function pr($arr) {
+    $cli = (php_sapi_name() == 'cli');
+    if (!$cli) echo "<pre style='font-size: 8pt; text-align: left; background-color: #ffffff;'>";
+    print_r($arr);
+    if (!$cli) echo "</pre>";
 }

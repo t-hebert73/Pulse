@@ -75,7 +75,36 @@ Route::get('shows', function()
  * Admin Panel
  */
 
-Route::get('admin', 'AdminController@showAdminPanel');
+Route::get('admin', array('before' => 'auth', 'uses' => 'AdminController@showAdminPanel'));
+
+
+/*
+ * Login
+ */
+
+Route::get('login', function()
+{
+   return View::make('login');
+});
+
+/*
+ * Admin Shows
+ */
+
+Route::get('admin/shows', array('before' => 'auth', 'uses' => 'ShowsController@showShowsPanel'));
+
+/*
+ * Admin Add Shows
+ */
+
+Route::get('admin/shows/add', array('before' => 'auth', 'uses' => 'ShowsController@showAddAShow'));
+
+/*
+ * Admin Remove Shows
+ */
+
+Route::get('admin/shows/remove/{id}', array('before' => 'auth', 'uses' => 'ShowsController@removeShow'));
+
 
 /*
 |--------------------------------------------------------------------------
@@ -87,3 +116,15 @@ Route::get('admin', 'AdminController@showAdminPanel');
  * Contact
  */
 Route::post('contact', 'ContactController@ContactUsForm');
+
+/*
+ * Login
+ */
+
+Route::post('login', 'LoginController@attemptLogin');
+
+/*
+ * Add Show
+ */
+
+Route::post('addShow', 'ShowsController@addShow');
