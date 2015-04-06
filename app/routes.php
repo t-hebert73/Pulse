@@ -105,6 +105,11 @@ Route::get('admin/shows/add', array('before' => 'auth', 'uses' => 'ShowsControll
 
 Route::get('admin/shows/remove/{id}', array('before' => 'auth', 'uses' => 'ShowsController@removeShow'));
 
+/*
+ *Admin Add Images
+ */
+Route::get('admin/images/add', array('before' => 'auth', 'uses' => 'ImageController@AddAnImage'));
+
 
 /*
 |--------------------------------------------------------------------------
@@ -128,3 +133,9 @@ Route::post('login', 'LoginController@attemptLogin');
  */
 
 Route::post('addShow', 'ShowsController@addShow');
+
+/*
+ * Add Image
+ */
+
+Route::post('addImage', 'ImageController@addImage');
