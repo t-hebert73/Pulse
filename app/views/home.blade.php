@@ -10,6 +10,28 @@
                     <a href="theband" title="About The Band">
                         <div class="image-container">
                             <div class="image">
+                                <img alt="Pulse on stage" title="Pulse at Mahtay Cafe" src="images/bandshotmontys.jpg" />
+                            </div>
+
+                        </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title"> Show at Montys Gastropub</h1>
+                                <p class="promo">Pulse has played a great show at Montys Gastropub located in St Catharines! More images and video to come!</p>
+
+                                <div class="clear"></div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="theband" title="About The Band">
+                        <div class="image-container">
+                            <div class="image">
                                 <img alt="Pulse on stage" title="Pulse at Mahtay Cafe" src="images/pulseonstage.jpg" />
                             </div>
 
@@ -39,24 +61,6 @@
                                 <p class="promo">Pulse has recorded 3 new cover songs so head over to the media page to listen!</p>
 
                                 <div class="clear"></div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact" title="Contact Pulse">
-                        <div class="image">
-                            <img alt="Pulse Band Logo" title="Pulse Niagara" src="images/pulse.jpg" />
-                        </div>
-                        <div class="promo-container">
-                            <div class="content">
-                                <h1 class="promo-title">Now Booking Gigs</h1>
-                                <p class="promo"> Pulse is now looking to book gigs, so head over the to contact page to book now.</p>
 
 
                             </div>
