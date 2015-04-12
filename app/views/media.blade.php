@@ -14,8 +14,8 @@
                     <div class="song-container">
                         <div class="song-info">
                             <div class="content">
-                                <h4 class="song-title">Treasure</h4>
-                                <h4 class="band-name">Pulse </h4>
+                                <h4 class="song-title">Treasure - Bruno Mars</h4>
+                                <h4 class="band-name">Pulse Cover </h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -64,8 +64,8 @@
                     <div class="song-container">
                         <div class="song-info">
                             <div class="content">
-                                <h4 class="song-title">Sir Duke</h4>
-                                <h4 class="band-name">Pulse</h4>
+                                <h4 class="song-title">Sir Duke - Stevie Wonder</h4>
+                                <h4 class="band-name">Pulse Cover</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_sirduke" class="jp-jplayer"></div>
@@ -114,8 +114,8 @@
                     <div class="song-container">
                         <div class="song-info">
                             <div class="content">
-                                <h4 class="song-title">Josie</h4>
-                                <h4 class="band-name">Pulse</h4>
+                                <h4 class="song-title">Josie - Steely Dan</h4>
+                                <h4 class="band-name">Pulse Cover</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_josie" class="jp-jplayer"></div>
@@ -163,8 +163,8 @@
                     <div class="song-container">
                         <div class="song-info">
                             <div class="content">
-                                <h4 class="song-title">Get Lucky</h4>
-                                <h4 class="band-name">Pulse </h4>
+                                <h4 class="song-title">Get Lucky - Daft Punk</h4>
+                                <h4 class="band-name">Pulse Cover</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_getlucky" class="jp-jplayer"></div>
@@ -212,8 +212,8 @@
                     <div class="song-container">
                         <div class="song-info">
                             <div class="content">
-                                <h4 class="song-title">Chameleon</h4>
-                                <h4 class="band-name">Pulse </h4>
+                                <h4 class="song-title">Chameleon - Herbie Hancock</h4>
+                                <h4 class="band-name">Pulse Cover</h4>
                             </div>
                         </div>
                         <div id="jquery_jplayer_chameleon" class="jp-jplayer"></div>
