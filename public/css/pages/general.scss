@@ -24,7 +24,6 @@ body {
   background-color: black;
   border-bottom: 10px solid $lightblue;
 
-
   a{
     color:white;
   }
@@ -139,7 +138,7 @@ body {
 
 .main-content{
   @media #{$mobile}{
-    width:348px;
+    width:100%;
   }
 
   p{
@@ -247,12 +246,16 @@ body {
 
 .flexslider{
   li{
+    padding:0 55px;
+    @media #{$mobile}{
+      padding:0 5px;
+    }
     .image{
       float: left;
-      width:25%;
+      width:30%;
       height:200px;
       @media #{$mobile} {
-        display: none;
+        width:100%;
       }
 
       img{
@@ -261,7 +264,7 @@ body {
       }
     }
     .promo-container{
-      width:75%;
+      width:70%;
       float: left;
       color:white;
       @media #{$mobile}{
@@ -270,6 +273,10 @@ body {
 
       .content{
         padding:10px 20px;
+
+        @media #{$mobile}{
+          padding:15px 20px;
+        }
 
         .promo-title{
           margin-top:0px;
@@ -305,6 +312,10 @@ body {
   .flex-direction-nav{
     @media #{$mobile}{
       display: none;
+    }
+
+    li a{
+      color:rgba(66, 139, 202,1);
     }
   }
 }

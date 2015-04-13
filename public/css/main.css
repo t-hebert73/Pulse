@@ -97,7 +97,7 @@ body {
 
 @media (max-width: 767px) {
   .main-content {
-    width: 348px; } }
+    width: 100%; } }
 @media (max-width: 767px) {
   .main-content p {
     text-align: center; } }
@@ -177,46 +177,56 @@ body {
   .topbar .container {
     padding-top: 25px; }
 
-.flexslider li .image {
-  float: left;
-  width: 25%;
-  height: 200px; }
+.flexslider li {
+  padding: 0 55px; }
   @media (max-width: 767px) {
-    .flexslider li .image {
-      display: none; } }
-  .flexslider li .image img {
-    border: 3px solid white;
-    height: 100%; }
-.flexslider li .promo-container {
-  width: 75%;
-  float: left;
-  color: white; }
-  @media (max-width: 767px) {
-    .flexslider li .promo-container {
-      width: 100%; } }
-  .flexslider li .promo-container .content {
-    padding: 10px 20px; }
-    .flexslider li .promo-container .content .promo-title {
-      margin-top: 0px;
-      margin-bottom: 20px; }
-      @media (max-width: 979px) {
-        .flexslider li .promo-container .content .promo-title {
-          font-size: 28px;
-          text-align: center; } }
-    .flexslider li .promo-container .content .promo {
-      margin-bottom: 5px; }
+    .flexslider li {
+      padding: 0 5px; } }
+  .flexslider li .image {
+    float: left;
+    width: 30%;
+    height: 200px; }
+    @media (max-width: 767px) {
+      .flexslider li .image {
+        width: 100%; } }
+    .flexslider li .image img {
+      border: 3px solid white;
+      height: 100%; }
+  .flexslider li .promo-container {
+    width: 70%;
+    float: left;
+    color: white; }
+    @media (max-width: 767px) {
+      .flexslider li .promo-container {
+        width: 100%; } }
+    .flexslider li .promo-container .content {
+      padding: 10px 20px; }
       @media (max-width: 767px) {
-        .flexslider li .promo-container .content .promo {
-          text-align: center; } }
-    .flexslider li .promo-container .content .venue-container {
-      float: left; }
-    .flexslider li .promo-container .content .attendance-container {
-      float: right; }
+        .flexslider li .promo-container .content {
+          padding: 15px 20px; } }
+      .flexslider li .promo-container .content .promo-title {
+        margin-top: 0px;
+        margin-bottom: 20px; }
+        @media (max-width: 979px) {
+          .flexslider li .promo-container .content .promo-title {
+            font-size: 28px;
+            text-align: center; } }
+      .flexslider li .promo-container .content .promo {
+        margin-bottom: 5px; }
+        @media (max-width: 767px) {
+          .flexslider li .promo-container .content .promo {
+            text-align: center; } }
+      .flexslider li .promo-container .content .venue-container {
+        float: left; }
+      .flexslider li .promo-container .content .attendance-container {
+        float: right; }
 .flexslider .flex-control-nav {
   display: none; }
 @media (max-width: 767px) {
   .flexslider .flex-direction-nav {
     display: none; } }
+.flexslider .flex-direction-nav li a {
+  color: #428bca; }
 
 .clear {
   clear: both; }

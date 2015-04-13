@@ -100,7 +100,7 @@
 
 <div class="container home">
 
-<div class="row">
+<div class="row-fluid">
 
     <div class="mainbar col-md-8">
         <div class="main-content">
