@@ -17,7 +17,7 @@
                         <div class="promo-container">
                             <div class="content">
                                 <h1 class="promo-title"> Show at Montys Gastropub</h1>
-                                <p class="promo">Pulse has played a great show at Montys Gastropub located in St Catharines! More images and video to come!</p>
+                                <p class="promo">Pulse has played an awesome show at Montys Gastropub located in St Catharines! Thanks everyone for coming out, more images and video to come!</p>
 
                                 <div class="clear"></div>
 
@@ -28,6 +28,30 @@
                         <div class="clear"></div>
                     </a>
                 </li>
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=vxkbU6E6XMI&feature=youtu.be" title="Pulse in the studio!" target="_blank">
+                        <div class="image-container">
+                            <div class="image">
+                                <img alt="Pulse in the studio" title="Pulse in the studio" src="images/pulseyoutubethumb.png" />
+                            </div>
+
+                        </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title">Pulse Jamming in the Studio!</h1>
+                                <p class="promo">Check out Pulse playing some songs in the studio!</p>
+
+                                <div class="clear"></div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </a>
+                </li>
+
                 <li>
                     <a href="theband" title="About The Band">
                         <div class="image-container">
