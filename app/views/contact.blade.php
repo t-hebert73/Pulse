@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts/layout')
 @section('content')
 
 <h1 class="page-title">Contact Us</h1>

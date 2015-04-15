@@ -67,7 +67,7 @@ class ShowsController extends BaseController {
 
 	public function edit($id){
 		$show = Show::find($id);
-		return View::make('adminEditShow')->with('show', $show);
+		return View::make('shows.edit')->with('show', $show);
 	}
 
 	public function destroy($id){
