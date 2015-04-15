@@ -15,40 +15,91 @@ class ShowsController extends BaseController {
 	|
 	*/
 
-    public function showShowsPanel(){
+    public function index(){
 
-		$showsResults = Show::all();
+		$shows = Show::all();
 
-		return View::make('adminShows')->with('data', $showsResults);
+		return View::make('shows.index')->with('shows', $shows);
     }
 
-	public function showAddAShow(){
+	public function create(){
 
-		return View::make('adminAddShow');
+		return View::make('shows.create');
 
 	}
 
-	public function removeShow($id){
+	public function show(){
+
+	}
+
+	public function update($id){
+
+		$rules = array(
+			'date'		=> 'required',
+			'time'		=> 'required',
+			'location'	=> 'required'
+		);
+
+		$validator = Validator::make(Input::all(), $rules);
+
+		$dateRaw = Input::get('date');
+		$date = date('Y-m-d', strtotime($dateRaw));
+
+		$time = Input::get('time');
+		$location = Input::get('location');
+
+		if($validator->fails()) {
+			return Redirect::to('shows/create')->withErrors($validator)->withInput(Input::all());
+		}else{
+			$show = Show::find($id);
+
+			$show->date = $date;
+			$show->time = $time;
+			$show->location = $location;
+
+			$show->save();
+
+			Session::flash('message', 'Successfully updated the show!');
+			return Redirect::to('shows');
+		}
+
+	}
+
+	public function edit($id){
+		$show = Show::find($id);
+		return View::make('adminEditShow')->with('show', $show);
+	}
+
+	public function destroy($id){
 
 		$show = Show::find($id);
 		$show->delete();
 
-		return Redirect::to('admin/shows')->with('removeStatus', 'Show removed.');
+		// redirect
+		Session::flash('message', 'Successfully deleted the show.');
+		return Redirect::to('shows');
 
 	}
 
-	public function addShow(){
+	public function store(){
 
-		$inputs = Input::all();
+		$rules = array(
+			'date'		=> 'required',
+			'time'		=> 'required',
+			'location'	=> 'required'
+		);
 
-		$dateRaw = $inputs['date'];
+		$validator = Validator::make(Input::all(), $rules);
+
+		$dateRaw = Input::get('date');
 		$date = date('Y-m-d', strtotime($dateRaw));
 
-		$time = $inputs['time'];
-		$location = $inputs['location'];
+		$time = Input::get('time');
+		$location = Input::get('location');
 
-		if(!empty($date) && !empty($time) && !empty($location)){
-
+		if($validator->fails()) {
+			return Redirect::to('shows/create')->withErrors($validator)->withInput(Input::all());
+		}else{
 			$show = new Show;
 
 			$show->date = $date;
@@ -57,22 +108,11 @@ class ShowsController extends BaseController {
 
 			$show->save();
 
-			$data = array(
-				'formStatus' => 'success',
-				'formMessage' => '<strong>Success!</strong> Thank you for adding a show.');
-		}else{
-
-			$data = array(
-				'formStatus' => 'failed',
-				'formMessage' => '<strong>Failed!</strong> Make sure to fill out the entire form.',
-				'addShowForm' => array(
-					'date' => $date,
-					'time' => $time,
-					'location' => $location
-					));
+			Session::flash('message', 'Successfully created a show!');
+			return Redirect::to('shows');
 		}
 
-		return View::make('adminAddShow')->with('data', $data);
+
 	}
 
 }

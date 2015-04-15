@@ -11,7 +11,7 @@
                 <div class="mainbar col-md-12">
 
                     <div class="admin-option">
-                        <a class="option-link" href="admin/shows/add">
+                        <a class="option-link" href="shows/create">
                             <h2>Add Show</h2>
 
                             <p> Add some shows!</p>

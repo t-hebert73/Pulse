@@ -74,9 +74,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shows <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="/admin/shows">List Shows</a></li>
+                            <li><a href="/shows">List Shows</a></li>
                             <li class="divider"></li>
-                            <li><a href="/admin/shows/add">Add</a></li>
+                            <li><a href="/shows/create">Add</a></li>
                         </ul>
                     </li>
                 </ul>

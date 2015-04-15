@@ -64,14 +64,6 @@ Route::get('gallery', function()
 });
 
 /*
- * Shows
- */
-Route::get('shows', function()
-{
-    return View::make('shows');
-});
-
-/*
  * Admin Panel
  */
 
@@ -86,24 +78,6 @@ Route::get('login', function()
 {
    return View::make('login');
 });
-
-/*
- * Admin Shows
- */
-
-Route::get('admin/shows', array('before' => 'auth', 'uses' => 'ShowsController@showShowsPanel'));
-
-/*
- * Admin Add Shows
- */
-
-Route::get('admin/shows/add', array('before' => 'auth', 'uses' => 'ShowsController@showAddAShow'));
-
-/*
- * Admin Remove Shows
- */
-
-Route::get('admin/shows/remove/{id}', array('before' => 'auth', 'uses' => 'ShowsController@removeShow'));
 
 /*
  *Admin Add Images
@@ -129,13 +103,22 @@ Route::post('contact', 'ContactController@ContactUsForm');
 Route::post('login', 'LoginController@attemptLogin');
 
 /*
- * Add Show
- */
-
-Route::post('addShow', 'ShowsController@addShow');
-
-/*
  * Add Image
  */
 
 Route::post('addImage', 'ImageController@addImage');
+
+
+/*
+|--------------------------------------------------------------------------
+| Grouped Routes
+|--------------------------------------------------------------------------
+*/
+
+/*
+ * routes for shows with auth
+ */
+Route::group(['before' => 'auth'], function(){
+    Route::resource('shows', 'ShowsController');
+});
+
