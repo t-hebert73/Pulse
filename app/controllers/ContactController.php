@@ -30,7 +30,7 @@ class ContactController extends  BaseController {
         //Check validation
         if($validation->fails())
         {
-            return Redirect::to('contact')
+            return Redirect::to('/contact')
                 ->withErrors($validation)  //Will send errors to the form
                 ->withInput();  //Will keep input in the form
         }

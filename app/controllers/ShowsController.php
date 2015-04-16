@@ -40,24 +40,18 @@ class ShowsController extends BaseController {
 			'location'	=> 'required'
 		);
 
-		$validator = Validator::make(Input::all(), $rules);
+		$input = Input::all();
 
-		$dateRaw = Input::get('date');
-		$date = date('Y-m-d', strtotime($dateRaw));
+		$validator = Validator::make($input, $rules);
 
-		$time = Input::get('time');
-		$location = Input::get('location');
+		$input['date'] = date('Y-m-d', strtotime($input['date']));
 
 		if($validator->fails()) {
-			return Redirect::to('shows/create')->withErrors($validator)->withInput(Input::all());
+			return Redirect::to('shows/create')->withErrors($validator)->withInput();
 		}else{
 			$show = Show::find($id);
 
-			$show->date = $date;
-			$show->time = $time;
-			$show->location = $location;
-
-			$show->save();
+			$show->update($input);
 
 			Session::flash('message', 'Successfully updated the show!');
 			return Redirect::to('shows');
@@ -73,7 +67,7 @@ class ShowsController extends BaseController {
 	public function destroy($id){
 
 		$show = Show::find($id);
-		$show->delete();
+		$show->destroy($id);
 
 		// redirect
 		Session::flash('message', 'Successfully deleted the show.');
@@ -89,24 +83,16 @@ class ShowsController extends BaseController {
 			'location'	=> 'required'
 		);
 
-		$validator = Validator::make(Input::all(), $rules);
+		$input = Input::all();
 
-		$dateRaw = Input::get('date');
-		$date = date('Y-m-d', strtotime($dateRaw));
+		$validator = Validator::make($input, $rules);
 
-		$time = Input::get('time');
-		$location = Input::get('location');
+		$input['date'] = date('Y-m-d', strtotime($input['date']));
 
 		if($validator->fails()) {
-			return Redirect::to('shows/create')->withErrors($validator)->withInput(Input::all());
+			return Redirect::to('shows/create')->withErrors($validator)->withInput();
 		}else{
-			$show = new Show;
-
-			$show->date = $date;
-			$show->time = $time;
-			$show->location = $location;
-
-			$show->save();
+			Show::create($input);
 
 			Session::flash('message', 'Successfully created a show!');
 			return Redirect::to('shows');

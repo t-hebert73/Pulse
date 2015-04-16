@@ -7,3 +7,4 @@ composer.phar
 .DS_Store
 Thumbs.db
 /public/css/.sass-cache
+_ide_helper.php

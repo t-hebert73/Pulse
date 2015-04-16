@@ -7,5 +7,5 @@
  */
 
 class Show extends Eloquent {
-
+    protected $fillable = ['date', 'time', 'location'];
 }

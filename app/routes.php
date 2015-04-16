@@ -28,14 +28,14 @@ Route::get('/','HomeController@showHome');
  */
 Route::get('contact', function()
 {
-    return View::make('contact');
+    return View::make('pages/contact');
 });
 
 /*
  * Email Success
  */
 Route::get('emailSuccess', function(){
-    return View::make('emailSuccess');
+    return View::make('pages/emailSuccess');
 });
 
 /*
@@ -43,7 +43,7 @@ Route::get('emailSuccess', function(){
  */
 Route::get('theband', function()
 {
-    return View::make('theband');
+    return View::make('pages/theband');
 });
 
 /*
@@ -52,7 +52,7 @@ Route::get('theband', function()
 
 Route::get('media', function()
 {
-    return View::make('media');
+    return View::make('pages/media');
 });
 
 /*
@@ -60,7 +60,7 @@ Route::get('media', function()
  */
 Route::get('gallery', function()
 {
-    return View::make('gallery');
+    return View::make('pages/gallery');
 });
 
 /*
@@ -76,7 +76,7 @@ Route::get('admin', array('before' => 'auth', 'uses' => 'AdminController@showAdm
 
 Route::get('login', function()
 {
-   return View::make('login');
+   return View::make('pages/login');
 });
 
 /*
