@@ -91,6 +91,20 @@ body {
   }
 }
 
+.contact-container{
+  float:right;
+  margin-top:10px;
+
+  .email{
+    color:white;
+  }
+
+  a.button{
+    display: block;
+    margin:0 auto;
+  }
+}
+
 .icon-bar{
   background-color: white;
 }
