@@ -46,7 +46,7 @@
     <?php
     //Get the current page name
     global $currentPage;
-    $currentPage = basename($_SERVER['PHP_SELF']);
+    $currentPage = basename($_SERVER['REQUEST_URI']);
     ?>
 
 </head>
