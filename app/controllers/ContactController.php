@@ -11,6 +11,7 @@ class ContactController extends  BaseController {
         $rules = array(
             'name' => 'required',
             'email' => 'required|email',
+            'phone' => 'digits:10',
             'msg' => 'required|min:10|max:255'
         );
 
@@ -19,6 +20,7 @@ class ContactController extends  BaseController {
             'name.required' => "Please enter your name",
             'email.required' => "Please enter your email address",
             'email.email' => "Must enter a valid email address",
+            'phone.digits' => "Must enter a valid phone number",
             'msg.required' => "A brief message is required",
             'msg.min' => "Must be at least 10 characters",
             'msg.max' => "Cannot be longer then 255 characters"
@@ -39,6 +41,7 @@ class ContactController extends  BaseController {
         //Prepare data to send to the email view
         $data = array('name' => $input['name'],
             'email' => $input['email'],
+            'phone' => $input['phone'],
             'msg' => $input['msg']
         );
 
@@ -53,7 +56,10 @@ class ContactController extends  BaseController {
 
             $message->subject('A fan has sent you a message');
         });
-        return Redirect::to('/contact');
+
+        //return Redirect::to('/contact')->withInput()->with('success', 'Email Successfully sent!');
+        return Redirect::to('/contact')->with('success', 'Email Successfully sent!');
+
     }
 }
 ?>

@@ -37,5 +37,10 @@ $(document).ready(function(){
         $date.datepicker();
     }
 
+    $('.close-msg').click(function(){
+       $(this).parent().addClass('hidden');
+       $('.alert-box.success').addClass('hidden');
+    });
+
 
 });

@@ -197,9 +197,7 @@ body {
   }
 }
 
-.mainbar.contact{
-  min-height: 585px;
-}
+
 
 .mainbar.media{
   min-height: 585px;
@@ -210,24 +208,6 @@ body {
   margin: 0px 0;
 }
 
-.contact-container{
-  float: right;
-  @media #{$mobile}{
-    display: none;
-  }
-
-  .email{
-    color:white;
-    font-size:14px;
-    margin-top:10px;
-  }
-
-  a.button{
-    font-size:16px;
-    float: right;
-    margin-top:10px;
-  }
-}
 
 .twitter-feed-container{
   margin-top:15px;
