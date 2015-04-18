@@ -63,6 +63,9 @@ body {
 .contact-container {
   float: right;
   margin-top: 10px; }
+  @media (max-width: 767px) {
+    .contact-container {
+      display: none; } }
   .contact-container .email {
     color: white; }
   .contact-container a.button {

@@ -94,6 +94,10 @@ body {
 .contact-container{
   float:right;
   margin-top:10px;
+  
+  @media #{$mobile}{
+    display: none;
+  }
 
   .email{
     color:white;
