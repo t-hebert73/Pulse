@@ -1,0 +1,128 @@
+body.home{
+  .container.home{
+    min-height: 524px;
+  }
+
+  .topbar{
+    background-image:url('../images/darkpattern.png');
+
+    .container{
+      padding-top:25px;
+
+      .flexslider{
+        li{
+          padding:0 55px;
+          @media #{$mobile}{
+            padding:0 5px;
+          }
+          .image{
+            float: left;
+            width:30%;
+            height:200px;
+            @media #{$mobile} {
+              width:100%;
+            }
+
+            img{
+              border:3px solid white;
+              height:100%;
+            }
+          }
+          .promo-container{
+            width:70%;
+            float: left;
+            color:white;
+            @media #{$mobile}{
+              width: 100%;
+            }
+
+            .content{
+              padding:10px 20px;
+
+              @media #{$mobile}{
+                padding:15px 20px;
+              }
+
+              .promo-title{
+                margin-top:0px;
+                margin-bottom:20px;
+
+                @media #{$ltDesktop}{
+                  font-size:28px;
+                  text-align: center;
+                }
+              }
+
+              .promo{
+                margin-bottom: 5px;
+                @media #{$mobile}{
+                  text-align: center;
+                }
+              }
+
+              .venue-container{
+                float: left;
+              }
+
+              .attendance-container{
+                float: right;
+              }
+            }
+          }
+        }
+
+        .flex-control-nav{
+          display: none;
+        }
+        .flex-direction-nav{
+          @media #{$mobile}{
+            display: none;
+          }
+
+          li a{
+            color:rgba(66, 139, 202,1);
+          }
+        }
+      }
+    }
+  }
+
+  .main-content{
+
+    @media #{$mobile}{
+      width:100%;
+    }
+
+    .pulse-logo{
+      width:260px;
+      margin:auto;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    p{
+      @media #{$mobile}{
+        text-align: center;
+      }
+    }
+  }
+
+  .shows{
+    text-align: center;
+
+    .bold-text{
+      font-weight: bold;
+      color: $lightblue;
+    }
+
+    p{
+      line-height: 10px;
+    }
+    h2{
+      margin-bottom: 20px !important;
+      margin-top: 20px;
+    }
+  }
+}

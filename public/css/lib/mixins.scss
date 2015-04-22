@@ -1,0 +1,18 @@
+//MIXINS
+@mixin background_gradient($topColor,$bottomColor) {
+  background-image: -ms-linear-gradient(top, $topColor, $bottomColor);
+  background-color: $topColor;
+  background-image: -khtml-gradient(linear, left top, left bottom, from($topColor), to($bottomColor));
+  background-image: -moz-linear-gradient(top, $topColor, $bottomColor);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $topColor), color-stop(100%, $bottomColor));
+  background-image: -webkit-radial-gradient(center, $topColor, $bottomColor);
+  background-image: -o-linear-gradient(top, $topColor, $bottomColor);
+  background-image: linear-gradient(top, $topColor, $bottomColor);
+}
+
+// Drop shadows
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

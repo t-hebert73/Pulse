@@ -1,0 +1,52 @@
+body {
+  padding-top: 100px;
+  font-size:16px;
+
+  //color
+  .blue{
+    color: $lightblue;
+  }
+
+  //content elements
+  p,div,span,{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Droid Sans', sans-serif;
+  }
+
+  .page-title{
+    margin-bottom: 0px;
+    background-image:url('../images/darkpattern.png');
+    color: white;
+    padding:30px 15px;
+    text-align: center;
+    margin-top:0px;
+  }
+
+  //premade classes
+  .button.blue{
+    @include background_gradient($lightblue,$lightblue);
+    color:white;
+    border:1px solid black;
+  }
+
+  .button:hover{
+    opacity: 0.8;
+  }
+
+  .mainbar{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    min-height: 435px;
+  }
+
+  .clear{
+    clear:both;
+  }
+
+
+
+}
+

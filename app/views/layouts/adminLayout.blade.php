@@ -47,11 +47,14 @@
     //Get the current page name
     global $currentPage;
     $currentPage = basename($_SERVER['REQUEST_URI']);
+    if($currentPage == ""){
+        $currentPage = "home";
+    }
     ?>
 
 </head>
 <!-- Body with page class -->
-<body class="<?php echo $currentPage."-page"; ?>">
+<body class="<?php echo $currentPage; ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">

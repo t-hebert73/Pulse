@@ -1,0 +1,78 @@
+body.media{
+  margin:0 0;
+  .mainbar{
+    min-height: 585px;
+    margin-top:25px;
+  }
+
+  /*
+* Media Page
+*/
+
+
+  .song-container{
+    margin-bottom: 15px;
+    .song-info{
+      float: left;
+      width: 303px;
+      color:black;
+      @media #{$normal}{
+        width:180px;
+      }
+      @media #{$small}{
+        width:283px;
+      }
+      @media #{$mobile}{
+        width:325px;
+        border-right: 5px solid $lightblue;
+      }
+      .content{
+        border:1px solid $lightblue;
+        border-left:5px solid $lightblue;
+        border-right: 0px;
+        text-align: center;
+        padding:10px 10px 8px;
+
+      }
+    }
+    .jp-audio{
+      float: left;
+      @media #{$mobile}{
+        width:325px;
+        overflow: hidden;
+      }
+
+      .jp-details{
+        display: none;
+      }
+
+      .jp-gui.jp-interface{
+        //background-image: url('../images/tweedpattern.png');
+      }
+    }
+  }
+
+  .recording-info-container{
+    text-align: center;
+    background-image:url('../images/darkpattern.png');
+    color:white;
+    padding:15px 0px;
+
+    h2{
+      margin-bottom: 35px;
+      margin-top:5px;
+    }
+
+    .image-container{
+      margin:0px 25px 25px;
+      border:3px solid white;
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .content{
+      padding:0px 15px;
+    }
+  }
+}

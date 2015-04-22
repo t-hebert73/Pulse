@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pulse Band Niagara - Pulseband.ca</title>
+    <title>Pulse - Fresh New Band In The Niagara Region</title>
     <meta name="description" content="Pulse is a fresh new band in the Niagara region looking to bring the Motown/Funk/Soul genres back in style.">
     <meta name="keywords" content="Pulse, Band, Niagara, Motown, New">
     <meta name="author" content="Pulse Niagara">
@@ -55,11 +55,14 @@
         //Get the current page name
         global $currentPage;
         $currentPage = basename($_SERVER['REQUEST_URI']);
+        if($currentPage == ""){
+            $currentPage = "home";
+        }
     ?>
 
 </head>
 <!-- Body with page class -->
-<body class="<?php echo $currentPage."-page"; ?>">
+<body class="<?php echo $currentPage; ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">

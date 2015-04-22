@@ -1,0 +1,8 @@
+body.login .login-form-container {
+  width: 300px;
+  margin: auto;
+  text-align: center; }
+  body.login .login-form-container input[type=submit] {
+    min-width: 80px; }
+
+/*# sourceMappingURL=login.css.map */
