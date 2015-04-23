@@ -446,4 +446,9 @@ body.login .login-form-container {
   body.login .login-form-container input[type=submit] {
     min-width: 80px; }
 
+body.photos .image-thumb {
+  height: 125px; }
+  body.photos .image-thumb img {
+    height: 100%; }
+
 /*# sourceMappingURL=main.css.map */

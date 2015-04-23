@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="admin-option">
-                        <a class="option-link" href="admin/images/add">
+                        <a class="option-link" href="photos/create">
                             <h2>Add Images</h2>
 
                             <p> Upload images for Pulse. Can be general images or related to shows.</p>
