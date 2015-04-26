@@ -23,27 +23,18 @@ class AudioController extends \BaseController{
 
     public function store(){
 
-        $rules = array(
-            'audio' => array('required', 'audio')
-        );
-
         $input = Input::all();
 
-        $validator = Validator::make($input, $rules);
+        $audio = new Audio;
 
-        if($validator->fails()){
+        $audio->file_name = $input['audio']->getClientOriginalName();
 
-        }else{
-            $audio = new Audio;
+        $input['audio']->move('public/audio/uploaded', $audio->file_name);
 
-            $audio->file_name = $input['audio']->getClientOriginalName();
+        $audio->save();
 
-            $input['audio']->move('public/audio/uploaded', $audio->file_name);
+        Session::flash('message', 'Audio file successfully uploaded');
+        return Redirect::to('audio.create');
 
-            $audio->save();
-
-            Session::flash('message', 'Audio file successfully uploaded');
-            return Redirect::to('audio.create');
-        }
     }
 }
