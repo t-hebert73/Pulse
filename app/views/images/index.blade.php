@@ -78,7 +78,7 @@
                     </div>
                     <?php
                     }else{
-                        echo 'No images man.';
+                        echo 'No photos man. You should <a href="photos/create"> add one</a>.';
                     }
 
                     ?>

@@ -48,7 +48,7 @@ class ImageController extends \BaseController {
 		$validator = Validator::make($input, $rules);
 
 		if($validator->fails()){
-			return Redirect::to('photos.create')->withErrors($validator)->withInput();
+			return Redirect::to('photos/create')->withErrors($validator)->withInput();
 		}else{
 			$image = new Image;
 
@@ -59,7 +59,7 @@ class ImageController extends \BaseController {
 
 			$image->save();
 
-			Session::flash('message', 'Successfully added an image!');
+			Session::flash('message', 'Successfully added a photo!');
 			return Redirect::to('photos');
 		}
 
@@ -125,9 +125,9 @@ class ImageController extends \BaseController {
 
 		if($result){ //only delete the image from the DB if the image was successfully deleted from filesystem
 			$image->destroy($id);
-			Session::flash('message', 'Successfully deleted the image.');
+			Session::flash('message', 'Successfully deleted the photo.');
 		}else{
-			Session::flash('message', 'Something went wrong when deleting the image.');
+			Session::flash('message', 'Something went wrong when deleting the photo.');
 		}
 
 		//redirect
