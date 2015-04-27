@@ -1,47 +1,139 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Max
- * Date: 4/5/15
- * Time: 9:08 PM
- */
+
+class ImageController extends \BaseController {
+
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	public function index()
+	{
+		//
+
+		$images = Image::all();
+
+		return View::make('images.index')->with('images', $images);
+	}
 
 
-class ImageController extends BaseController{
+	/**
+	 * Show the form for creating a new resource.
+	 *
+	 * @return Response
+	 */
+	public function create()
+	{
+		//
+		return View::make('images.create');
+	}
 
-    public function AddAnImage(){
 
-        return View::make('adminAddAnImage');
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @return Response
+	 */
+	public function store()
+	{
+		//
 
-    }
+		$rules = array(
+			'caption' => 'required',
+			'image' => array('required', 'image')
+		);
 
-    public function addImage(){
-        $inputs = Input::all();
+		$input = Input::all();
 
-        $imgName = $inputs['name'];
-        $image = $inputs['image'];
+		$validator = Validator::make($input, $rules);
 
-        if(!empty($imgName) && !empty($image)){
-            $imgFile = new Image;
+		if($validator->fails()){
+			return Redirect::to('photos.create')->withErrors($validator)->withInput();
+		}else{
+			$image = new Image;
 
-            $imgFile->name = $imgName;
-            $imgFile->image = $image;
+			$image->caption = $input['caption'];
+			$image->file_name = $input['image']->getClientOriginalName();
 
-            $imgFile->save();
+			$input['image']->move('public/images/uploaded', $image->file_name);
 
-            $data = array(
-                'formStatus' => 'success',
-                'formMessage' => '<strong>Success!</strong> Image has been added!');
-        }else{
-            $data = array(
-                'formStatus' => 'failed',
-                'formMessage' => '<strong>Failed!</strong> Make sure to fill out the entire form.',
-                'addImageForm' => array(
-                    'imgName' => $imgName,
-                    'image' => $image
-                ));
-        }
+			$image->save();
 
-        return View::make('adminAddAnImage')->with('data', $data);
-    }
+			Session::flash('message', 'Successfully added an image!');
+			return Redirect::to('photos');
+		}
+
+
+
+	}
+
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function show($id)
+	{
+		//
+	}
+
+
+	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function edit($id){
+		/*
+		$image = Image::find($id);
+
+		$imageFile = File::get(public_path() . '/images/uploaded/' . $image->file_name);
+
+		$image->imageobject = $imageFile;
+		return View::make('images.edit')->with('photo', $image);
+		*/
+	}
+
+
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function update($id)
+	{
+		//
+	}
+
+
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function destroy($id){
+
+		$image = Image::find($id);
+		$filename = $image->file_name;
+
+		$result = File::delete(public_path().'/images/uploaded/'.$filename);
+
+		if($result){ //only delete the image from the DB if the image was successfully deleted from filesystem
+			$image->destroy($id);
+			Session::flash('message', 'Successfully deleted the image.');
+		}else{
+			Session::flash('message', 'Something went wrong when deleting the image.');
+		}
+
+		//redirect
+		return Redirect::to('photos');
+
+	}
+
+
 }

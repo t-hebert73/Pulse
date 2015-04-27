@@ -8,6 +8,11 @@ body {
   }
 
   //content elements
+  
+  a{
+    display: block;
+  }
+
   p,div,span,{
     font-family: 'Roboto', sans-serif;
   }
@@ -40,6 +45,14 @@ body {
     margin-bottom: 25px;
     margin-top: 25px;
     min-height: 435px;
+  }
+
+  .left{
+    float:left;
+  }
+
+  .right{
+    float:right;
   }
 
   .clear{

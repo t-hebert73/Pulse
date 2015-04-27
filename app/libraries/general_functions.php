@@ -6,7 +6,9 @@
  * Time: 10:30 PM
  */
 
-
+/**
+ * @params array to output with <pre> tags
+ */
 function pr($arr) {
     $cli = (php_sapi_name() == 'cli');
     if (!$cli) echo "<pre style='font-size: 8pt; text-align: left; background-color: #ffffff;'>";
@@ -16,36 +18,17 @@ function pr($arr) {
 
 
 /**
- * @param $target - html ID target
- * @param $srcThumb - source from images folder
- * @param $srcFull - source from images folder
- * @return string - html modal formatted image
+ * @return string of current page's permalink
  */
-function PrintImage($target, $srcThumb, $srcFull){
+function getPageClass() {
 
-    $image = '<div class="img-box">';
+    //Get the current page name
+    global $currentPage;
+    $currentPage = basename($_SERVER['REQUEST_URI']);
+    if($currentPage == ""){
+        $currentPage = "home";
+    }
 
-    $image .= '<a href="#" data-toggle="modal" data-target="#'.$target.'">';
+    return $currentPage;
 
-    $image .= '<img src="../../images/'.$srcThumb.'">';
-    $image .= '</a>';
-
-    $image .= '<div class="modal fade" id="'.$target.'" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">';
-    $image .= '<div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">Pulse @ Mahtey, January 30/2015</h4>
-                        </div>
-                        <div class="modal-body">
-                            <img src="../../images/'.$srcFull.'">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>';
-    $image .= '</div>';
-    $image .= '</div>';
-
-    return $image;
 }
