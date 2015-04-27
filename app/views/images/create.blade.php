@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="page-title">Add an Image</h1>
+    <h1 class="page-title">Add A Photo</h1>
 
     <div class="content">
         <div class="container">

@@ -86,9 +86,15 @@ class ImageController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		//
+	public function edit($id){
+		/*
+		$image = Image::find($id);
+
+		$imageFile = File::get(public_path() . '/images/uploaded/' . $image->file_name);
+
+		$image->imageobject = $imageFile;
+		return View::make('images.edit')->with('photo', $image);
+		*/
 	}
 
 
@@ -110,9 +116,23 @@ class ImageController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
-	{
-		//
+	public function destroy($id){
+
+		$image = Image::find($id);
+		$filename = $image->file_name;
+
+		$result = File::delete(public_path().'/images/uploaded/'.$filename);
+
+		if($result){ //only delete the image from the DB if the image was successfully deleted from filesystem
+			$image->destroy($id);
+			Session::flash('message', 'Successfully deleted the image.');
+		}else{
+			Session::flash('message', 'Something went wrong when deleting the image.');
+		}
+
+		//redirect
+		return Redirect::to('photos');
+
 	}
 
 

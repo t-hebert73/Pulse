@@ -1,8 +1,27 @@
 body.photos{
   .image-thumb{
-    height:125px;
+    .img-box{
+      height:125px;
+
+      a{
+        height:100%;
+      }
+    }
+
+    .modal-body{
+      img{
+        width:100%;
+      }
+    }
+
     img{
       height:100%;
+    }
+  }
+
+  .panel-heading{
+    .left.heading{
+      padding:6px 0;
     }
   }
 }

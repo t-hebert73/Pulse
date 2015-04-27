@@ -82,6 +82,8 @@ body {
   font-size: 16px; }
   body .blue {
     color: #519CD0; }
+  body a {
+    display: block; }
   body p, body div, body span {
     font-family: 'Roboto', sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -110,6 +112,10 @@ body {
     margin-bottom: 25px;
     margin-top: 25px;
     min-height: 435px; }
+  body .left {
+    float: left; }
+  body .right {
+    float: right; }
   body .clear {
     clear: both; }
 
@@ -446,9 +452,15 @@ body.login .login-form-container {
   body.login .login-form-container input[type=submit] {
     min-width: 80px; }
 
-body.photos .image-thumb {
+body.photos .image-thumb .img-box {
   height: 125px; }
-  body.photos .image-thumb img {
+  body.photos .image-thumb .img-box a {
     height: 100%; }
+body.photos .image-thumb .modal-body img {
+  width: 100%; }
+body.photos .image-thumb img {
+  height: 100%; }
+body.photos .panel-heading .left.heading {
+  padding: 6px 0; }
 
 /*# sourceMappingURL=main.css.map */
