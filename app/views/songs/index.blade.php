@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Max
- * Date: 4/26/15
- * Time: 11:47 AM
+ * Date: 4/29/15
+ * Time: 9:48 PM
  */
 
-echo "wtf";
+echo 'Nerd Echo';

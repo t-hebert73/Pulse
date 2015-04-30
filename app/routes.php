@@ -120,6 +120,6 @@ Route::post('addImage', 'ImageController@addImage');
  */
 Route::group(['before' => 'auth'], function(){
     Route::resource('shows', 'ShowsController');
-    Route::resource('audio', 'AudioController');
+    Route::resource('songs', 'SongsController');
 });
 

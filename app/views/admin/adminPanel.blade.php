@@ -30,7 +30,7 @@
                     <div class="clear"></div>
 
                     <div class="admin-option">
-                        <a class="option-link" href="audio/create">
+                        <a class="option-link" href="songs/create">
                             <h2>Add Songs</h2>
 
                             <p>Upload songs by Pulse.</p>

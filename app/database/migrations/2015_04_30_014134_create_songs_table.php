@@ -3,22 +3,23 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAudioTable extends Migration {
+class CreateSongsTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		//
-        Schema::create('audio', function($table){
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        //
+        Schema::create('songs', function($table){
             $table->increments('id');
             $table->String('file_name');
+            $table->String('title');
             $table->timestamps();
         });
-	}
+    }
 
 	/**
 	 * Reverse the migrations.
@@ -28,7 +29,7 @@ class CreateAudioTable extends Migration {
 	public function down()
 	{
 		//
-        Schema::drop('audio');
+        Schema::drop('songs');
 	}
 
 }

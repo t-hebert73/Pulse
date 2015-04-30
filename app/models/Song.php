@@ -6,6 +6,6 @@
  * Time: 10:28 AM
  */
 
-class Audio extends Eloquent{
-    protected $fillable = ['file_name'];
+class Song extends Eloquent{
+    protected $fillable = ['file_name', 'title'];
 }
