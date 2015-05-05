@@ -8,6 +8,11 @@
 
         <div class="row">
             <div class="mainbar media col-md-8">
+            <?php
+            //echo AddSong($songs[0]->title);
+            //pr($songs);
+
+            ?>
 
                 <div class="content-container">
                     <div class="song-container">

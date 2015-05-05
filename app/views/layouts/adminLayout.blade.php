@@ -80,7 +80,9 @@
                             <li><a href="/songs">List Songs</a></li>
                             <li class="divider"></li>
                             <li><a href="/songs/create">Add</a></li>
-
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Photos <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/photos">List Photos</a></li>

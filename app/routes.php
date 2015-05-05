@@ -52,7 +52,8 @@ Route::get('theband', function()
 
 Route::get('media', function()
 {
-    return View::make('pages/media');
+    $songs = Song::all();
+    return View::make('pages/media')->with('songs', $songs);
 });
 
 /*
@@ -60,7 +61,9 @@ Route::get('media', function()
  */
 Route::get('gallery', function()
 {
-    return View::make('pages/gallery');
+    $images = Image::all();
+
+    return View::make('pages/gallery')->with('images', $images);
 });
 
 /*

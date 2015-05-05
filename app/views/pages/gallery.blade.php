@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <h1 class="page-title">Gallery</h1>
 
 <div class="container">
