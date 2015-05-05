@@ -28,11 +28,22 @@ ClassLoader::addDirectories(array(
 | General Functions
 |--------------------------------------------------------------------------
 |
-| Here we will require the general functions file so we can use the functions
+| Here we will require the general functions file so we can use the general functions
 |
 */
 
 require app_path().'/libraries/general_functions.php';
+
+/*
+|--------------------------------------------------------------------------
+| Images Functions
+|--------------------------------------------------------------------------
+|
+| Here we will require the image functions file so we can use the image functions
+|
+*/
+
+require app_path().'/libraries/image_functions.php';
 
 
 /*

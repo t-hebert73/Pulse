@@ -43,18 +43,9 @@
     <!-- Custom -->
     <script type="text/javascript" src="/js/custom.js"></script>
 
-    <?php
-    //Get the current page name
-    global $currentPage;
-    $currentPage = basename($_SERVER['REQUEST_URI']);
-    if($currentPage == ""){
-        $currentPage = "home";
-    }
-    ?>
-
 </head>
 <!-- Body with page class -->
-<body class="<?php echo $currentPage; ?>">
+<body class="<?php echo getPageClass(); ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">
@@ -83,11 +74,18 @@
                         </ul>
                     </li>
                     <li class="dropdown">
+
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/songs">List Songs</a></li>
                             <li class="divider"></li>
                             <li><a href="/songs/create">Add</a></li>
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Photos <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/photos">List Photos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/photos/create">Add</a></li>
                         </ul>
                     </li>
                 </ul>

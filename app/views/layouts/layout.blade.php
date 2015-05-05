@@ -51,18 +51,11 @@
     <!-- Custom -->
     <script type="text/javascript" src="/js/custom.js"></script>
 
-    <?php
-        //Get the current page name
-        global $currentPage;
-        $currentPage = basename($_SERVER['REQUEST_URI']);
-        if($currentPage == ""){
-            $currentPage = "home";
-        }
-    ?>
+
 
 </head>
 <!-- Body with page class -->
-<body class="<?php echo $currentPage; ?>">
+<body class="<?php echo getPageClass(); ?>">
 
 <header>
     <div class="navbar navbar-fixed-top" role="navigation">

@@ -80,12 +80,6 @@ Route::get('login', function()
 });
 
 /*
- *Admin Add Images
- */
-Route::get('admin/images/add', array('before' => 'auth', 'uses' => 'ImageController@AddAnImage'));
-
-
-/*
 |--------------------------------------------------------------------------
 | Post Routes
 |--------------------------------------------------------------------------
@@ -102,12 +96,6 @@ Route::post('contact', 'ContactController@ContactUsForm');
 
 Route::post('login', 'LoginController@attemptLogin');
 
-/*
- * Add Image
- */
-
-Route::post('addImage', 'ImageController@addImage');
-
 
 /*
 |--------------------------------------------------------------------------
@@ -121,5 +109,6 @@ Route::post('addImage', 'ImageController@addImage');
 Route::group(['before' => 'auth'], function(){
     Route::resource('shows', 'ShowsController');
     Route::resource('songs', 'SongsController');
+    Route::resource('photos', 'ImageController');
 });
 
