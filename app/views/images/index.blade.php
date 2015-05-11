@@ -32,6 +32,7 @@
                                 <!--why the fuck did i use tables-->
                                 <th>#</th>
                                 <th>Caption</th>
+                                <th>Album</th>
                                 <th>Thumbnail</th>
                                 <th>Filename</th>
                                 <th>Action</th>
@@ -45,6 +46,7 @@
                             <tr>
                                 <td><?php echo $image->id; ?></td>
                                 <td><?php echo $image->caption; ?></td>
+                                <td>Album</td>
                                 <td>
                                     <div class="image-thumb">
                                         <?php
