@@ -33,33 +33,43 @@
                     }
 
                     //Loop through uploaded songs and post to media page
-                    foreach($songs as $song){
+                    if(!empty($songs)){
+                        foreach($songs as $song){
 
-                        echo AddUploadedSong($song->title, $song->file_name, $mp3UploadedIndex);
+                            echo AddUploadedSong($song->title, $song->file_name, $mp3UploadedIndex);
 
-                        $mp3UploadedIndex++;
+                            $mp3UploadedIndex++;
+                        }
                     }
 
                     //In case we decide to add songs manually, add extra if statement for each manual file
-                    foreach($mp3Files as $mp3){
+                    if(!empty($mp3Files)){
+                        foreach($mp3Files as $mp3){
 
-                        if($mp3 == "Chameleon.mp3"){
-                            AddSong("Chameleon - Herbie Hancock", $mp3, $mp3Index);
+                            if($mp3 == "Chameleon.mp3"){
+                                AddSong("Chameleon - Herbie Hancock", $mp3, $mp3Index);
+                            }
+                            if($mp3 == "GetLucky.mp3"){
+                                AddSong("Get Lucky - Daft Punk", $mp3, $mp3Index);
+                            }
+                            if($mp3 == "Josie.mp3"){
+                                AddSong("Josie - Steely Dan", $mp3, $mp3Index);
+                            }
+                            if($mp3 == "SirDuke.mp3"){
+                                AddSong("Sir Duke - Stevie Wonder", $mp3, $mp3Index);
+                            }
+                            if($mp3 == "Treasure.mp3"){
+                                AddSong("Treasure - Bruno Mars", $mp3, $mp3Index);
+                            }
+                            $mp3Index++;
                         }
-                        if($mp3 == "GetLucky.mp3"){
-                            AddSong("Get Lucky - Daft Punk", $mp3, $mp3Index);
-                        }
-                        if($mp3 == "Josie.mp3"){
-                            AddSong("Josie - Steely Dan", $mp3, $mp3Index);
-                        }
-                        if($mp3 == "SirDuke.mp3"){
-                            AddSong("Sir Duke - Stevie Wonder", $mp3, $mp3Index);
-                        }
-                        if($mp3 == "Treasure.mp3"){
-                            AddSong("Treasure - Bruno Mars", $mp3, $mp3Index);
-                        }
-                        $mp3Index++;
                     }
+
+                    // If there are no uploaded songs, or no songs manually added
+                    if(empty($songs) && empty($mp3Files)){
+                        echo "There is no media available at this time.";
+                    }
+
 
                 ?>
             </div>
