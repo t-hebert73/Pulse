@@ -17,7 +17,7 @@ class ShowsController extends BaseController {
 
     public function index(){
 
-		$shows = Show::all();
+        $shows = Show::orderBy('date', 'DESC')->get();
 
 		return View::make('shows.index')->with('shows', $shows);
     }

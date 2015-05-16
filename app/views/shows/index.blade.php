@@ -22,7 +22,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">All Shows</div>
 
-                        <table class="table">
+                        <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -35,12 +35,18 @@
 
                             <tbody>
                             <?php
-                            foreach($shows as $show){
+                                    $i = 1;
+                                    foreach($shows as $show){
+                                    if(strtotime($show->date) > strtotime('now')){
+                                        $class = 'upcoming';
+                                    }else {
+                                        $class = 'past';
+                                    }
                             ?>
-                            <tr>
-                                <td><?php echo $show->id; ?></td>
+                            <tr class="<?php echo $class; ?>">
+                                <td><?php echo $i; ?></td>
                                 <td><?php echo $show->location; ?></td>
-                                <td><?php echo $show->date; ?></td>
+                                <td><?php echo date('M jS, Y', strtotime($show->date)); ?></td>
                                 <td><?php echo $show->time; ?></td>
                                 <td>
                                     <div style="display: inline-block">
@@ -59,8 +65,8 @@
 
 
                             <?php
-                            }
-                            ?>
+                                    $i++;
+                            } ?>
                             </tbody>
 
 

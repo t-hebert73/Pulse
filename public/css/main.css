@@ -461,4 +461,9 @@ body.photos .image-thumb img {
 body.photos .panel-heading .left.heading {
   padding: 6px 0; }
 
+body.shows tr.upcoming {
+  background-color: #d9edf7; }
+body.shows tr td {
+  vertical-align: middle; }
+
 /*# sourceMappingURL=main.css.map */
