@@ -43,6 +43,17 @@ require app_path().'/libraries/general_functions.php';
 |
 */
 
+require app_path().'/libraries/audio_functions.php';
+
+/*
+|--------------------------------------------------------------------------
+| AddAudio Function
+|--------------------------------------------------------------------------
+|
+| Here we will require the AddAudio file so we can use the AddAudio function
+|
+*/
+
 require app_path().'/libraries/image_functions.php';
 
 

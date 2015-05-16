@@ -25,7 +25,7 @@ class SongsController extends \BaseController{
 
         $rules = array(
             'title' => 'required',
-            'song' => array('required', 'song')
+            'song' => 'required'
         );
 
         $messages = array(
