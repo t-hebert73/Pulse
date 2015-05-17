@@ -25,7 +25,7 @@ class SongsController extends \BaseController{
 
         $rules = array(
             'title' => 'required',
-            'song' => array('required', 'mimes:mp3')
+            'song' => 'required'
         );
 
         $messages = array(
@@ -38,8 +38,10 @@ class SongsController extends \BaseController{
         $validator = Validator::make($input, $rules, $messages);
 
         if($validator->fails()){
+
             return Redirect::to('songs/create')->withErrors($validator)->withInput();
         }else{
+
             $song = new Song;
 
             $song->title = $input['title'];
@@ -55,6 +57,7 @@ class SongsController extends \BaseController{
     }
 
     public function destroy($id){
+
         $song = Song::find($id);
         $filename = $song->file_name;
 

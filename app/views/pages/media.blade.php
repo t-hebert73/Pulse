@@ -55,12 +55,14 @@
                             if($mp3 == "Josie.mp3"){
                                 AddSong("Josie - Steely Dan", $mp3, $mp3Index);
                             }
+                            /*
                             if($mp3 == "SirDuke.mp3"){
                                 AddSong("Sir Duke - Stevie Wonder", $mp3, $mp3Index);
                             }
                             if($mp3 == "Treasure.mp3"){
                                 AddSong("Treasure - Bruno Mars", $mp3, $mp3Index);
                             }
+                            */
                             $mp3Index++;
                         }
                     }
