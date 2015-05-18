@@ -55,6 +55,26 @@ body {
     clear:both;
   }
 
+  .alert-box.success{
+    h2{
+      font-size: 18px;
+      color: #4F8A10;
+      padding: 10px 20px;
+      background-color: #DFF2BF;
+      border: 1px solid #4F8A10;
+    }
+  }
+
+  .alert-box.failed{
+    h2{
+      font-size: 18px;
+      color: #D8000C;
+      padding: 10px 20px;
+      background-color: #FFBABA;
+      border: 1px solid #D8000C;
+    }
+  }
+
 
 
 }

@@ -18,7 +18,6 @@ class SongsController extends \BaseController{
     public function create(){
 
         return View::make('songs.create');
-
     }
 
     public function store(){
@@ -35,24 +34,37 @@ class SongsController extends \BaseController{
 
         $input = Input::all();
 
+        //Get the extension of the uploaded file
+        $extension = pathinfo($input['song']->getClientOriginalName(), PATHINFO_EXTENSION);
+
+        //Array of allowed extensions
+        $acceptedFileTypes = array('mp3', 'MP3', 'wav', 'wma');
+
         $validator = Validator::make($input, $rules, $messages);
 
+        //If validation rules fail, redirect with errors
         if($validator->fails()){
 
             return Redirect::to('songs/create')->withErrors($validator)->withInput();
         }else{
 
-            $song = new Song;
+            //If the extension is not valid; redirect with error, otherwise proceed to add file
+            if(!in_array($extension , $acceptedFileTypes)){
 
-            $song->title = $input['title'];
-            $song->file_name = $input['song']->getClientOriginalName();
+                return Redirect::to('songs/create')->with('failed', 'File must be of type mp3, wav, or wma');
+            }else{
 
-            $input['song']->move('public/audio/uploaded', $song->file_name);
+                $song = new Song;
 
-            $song->save();
+                $song->title = $input['title'];
+                $song->file_name = $input['song']->getClientOriginalName();
 
-            Session::flash('message', 'Song file successfully uploaded');
-            return Redirect::to('songs/create');
+                $input['song']->move('public/audio/uploaded', $song->file_name);
+
+                $song->save();
+
+                return Redirect::to('songs/create')->with('success', 'Song file successfully uploaded!');
+            }
         }
     }
 
@@ -64,17 +76,15 @@ class SongsController extends \BaseController{
         $result = File::delete(public_path().'/audio/uploaded/'.$filename);
 
         if($result){
+
             $song->destroy($id);
-            Session::flash('message', 'Sucessfully deleted the image');
+            Session::flash('message', 'Sucessfully deleted the song');
         }else{
+
             Session::flash('message', 'Unable to delete image. contact Max/Trevor');
         }
 
         return Redirect::to('songs');
-    }
-
-    public function edit($id){
-
     }
 
 }

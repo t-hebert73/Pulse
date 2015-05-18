@@ -42,7 +42,8 @@
                         }
                     }
 
-                    //In case we decide to add songs manually, add extra if statement for each manual file
+                //In case we decide to add songs manually, add extra if statement for each manual file
+                /*
                     if(!empty($mp3Files)){
                         foreach($mp3Files as $mp3){
 
@@ -55,17 +56,17 @@
                             if($mp3 == "Josie.mp3"){
                                 AddSong("Josie - Steely Dan", $mp3, $mp3Index);
                             }
-                            /*
                             if($mp3 == "SirDuke.mp3"){
                                 AddSong("Sir Duke - Stevie Wonder", $mp3, $mp3Index);
                             }
                             if($mp3 == "Treasure.mp3"){
                                 AddSong("Treasure - Bruno Mars", $mp3, $mp3Index);
                             }
-                            */
+
+
                             $mp3Index++;
                         }
-                    }
+                    }*/
 
                     // If there are no uploaded songs, or no songs manually added
                     if(empty($songs) && empty($mp3Files)){
