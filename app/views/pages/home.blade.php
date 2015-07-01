@@ -6,6 +6,29 @@
         <!-- Place somewhere in the <body> of your page -->
         <div class="flexslider">
             <ul class="slides">
+
+                <li class="video-expand">
+                    <a href="https://www.youtube.com/channel/UC1voaUJaImOZD51PF0yl6VA" title="New Promo Video">
+                        <div class="image-container">
+                            <div class="video">
+                                <iframe width="309" height="200" src="https://www.youtube.com/embed/B9BcXY_BfYM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <div class="promo-container">
+                            <div class="content">
+                                <h1 class="promo-title">New Pulse Promo Video!</h1>
+                                <p class="promo">Check out the new promo video for Pulse. Niagara's next big cover band!</p>
+
+                                <div class="clear"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </a>
+                </li>
+
                 <li>
                     <a href="theband" title="About The Band">
                         <div class="image-container">
@@ -52,28 +75,6 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="theband" title="About The Band">
-                        <div class="image-container">
-                            <div class="image">
-                                <img alt="Pulse on stage" title="Pulse at Mahtay Cafe" src="images/pulseonstage.jpg" />
-                            </div>
-
-                        </div>
-                        <div class="promo-container">
-                            <div class="content">
-                                <h1 class="promo-title">First Show! - Mahtay Cafe</h1>
-                                <p class="promo">Pulse has played their first show at Mahtay Cafe located in St Catharines!</p>
-
-                                <div class="clear"></div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-                    </a>
-                </li>
                 <li>
                     <a href="media" title="Listen to Pulse">
                         <div class="image">

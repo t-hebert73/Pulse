@@ -10,6 +10,22 @@ body.home{
       padding-top:25px;
 
       .flexslider{
+
+        li.video-expand:hover{
+
+          @media #{$gtTablet}{
+            .video{
+              width:50%;
+              height:300px;
+            }
+
+            .promo-container{
+              width:50%;
+            }
+          }
+
+        }
+
         li{
           padding:0 55px;
           @media #{$mobile}{
@@ -28,10 +44,25 @@ body.home{
               height:100%;
             }
           }
+          .video{
+            float:left;
+            width:30%;
+            height:200px;
+            transition:all 1s;
+
+            @media #{$mobile}{
+              width:100%;
+            }
+            iframe{
+              width:100%;
+              height:100%;
+            }
+          }
           .promo-container{
             width:70%;
             float: left;
-            color:white;
+
+            transition:all 1s;color:white;
             @media #{$mobile}{
               width: 100%;
             }

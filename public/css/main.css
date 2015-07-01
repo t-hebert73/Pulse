@@ -2,9 +2,9 @@
 @import url(lightbox/bootstrap-lightbox.min.css);
 header .navbar {
   background-color: black;
-  border-bottom: 10px solid #519cd0; }
+  border-bottom: 10px solid #519CD0; }
   header .navbar .navbar-toggle {
-    background-color: #519cd0; }
+    background-color: #519CD0; }
   header .navbar .icon-bar {
     background-color: white; }
   header .navbar .navbar-collapse {
@@ -22,9 +22,9 @@ header .navbar {
       padding: 35px 25px;
       color: white; }
     header .navbar .navbar-collapse .nav.navbar-nav li a:focus {
-      background-color: #519cd0; }
+      background-color: #519CD0; }
     header .navbar .navbar-collapse .nav.navbar-nav li a:hover {
-      background-color: #519cd0; }
+      background-color: #519CD0; }
     header .navbar .navbar-collapse .nav.navbar-nav ul.dropdown-menu li a {
       padding: 10px;
       color: black; }
@@ -81,7 +81,7 @@ body {
   padding-top: 100px;
   font-size: 16px; }
   body .blue {
-    color: #519cd0; }
+    color: #519CD0; }
   body p, body div, body span {
     font-family: 'Roboto', sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -94,14 +94,14 @@ body {
     text-align: center;
     margin-top: 0px; }
   body .button.blue {
-    background-image: -ms-linear-gradient(top, #519cd0, #519cd0);
-    background-color: #519cd0;
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#519cd0), to(#519cd0));
-    background-image: -moz-linear-gradient(top, #519cd0, #519cd0);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #519cd0), color-stop(100%, #519cd0));
-    background-image: -webkit-radial-gradient(center, #519cd0, #519cd0);
-    background-image: -o-linear-gradient(top, #519cd0, #519cd0);
-    background-image: linear-gradient(top, #519cd0, #519cd0);
+    background-image: -ms-linear-gradient(top, #519CD0, #519CD0);
+    background-color: #519CD0;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#519CD0), to(#519CD0));
+    background-image: -moz-linear-gradient(top, #519CD0, #519CD0);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #519CD0), color-stop(100%, #519CD0));
+    background-image: -webkit-radial-gradient(center, #519CD0, #519CD0);
+    background-image: -o-linear-gradient(top, #519CD0, #519CD0);
+    background-image: linear-gradient(top, #519CD0, #519CD0);
     color: white;
     border: 1px solid black; }
   body .button:hover {
@@ -135,6 +135,12 @@ body.home .topbar {
   background-image: url("../images/darkpattern.png"); }
   body.home .topbar .container {
     padding-top: 25px; }
+    @media (min-width: 980px) {
+      body.home .topbar .container .flexslider li.video-expand:hover .video {
+        width: 50%;
+        height: 300px; }
+      body.home .topbar .container .flexslider li.video-expand:hover .promo-container {
+        width: 50%; } }
     body.home .topbar .container .flexslider li {
       padding: 0 55px; }
       @media (max-width: 767px) {
@@ -150,9 +156,21 @@ body.home .topbar {
         body.home .topbar .container .flexslider li .image img {
           border: 3px solid white;
           height: 100%; }
+      body.home .topbar .container .flexslider li .video {
+        float: left;
+        width: 30%;
+        height: 200px;
+        transition: all 1s; }
+        @media (max-width: 767px) {
+          body.home .topbar .container .flexslider li .video {
+            width: 100%; } }
+        body.home .topbar .container .flexslider li .video iframe {
+          width: 100%;
+          height: 100%; }
       body.home .topbar .container .flexslider li .promo-container {
         width: 70%;
         float: left;
+        transition: all 1s;
         color: white; }
         @media (max-width: 767px) {
           body.home .topbar .container .flexslider li .promo-container {
@@ -200,7 +218,7 @@ body.home .shows {
   text-align: center; }
   body.home .shows .bold-text {
     font-weight: bold;
-    color: #519cd0; }
+    color: #519CD0; }
   body.home .shows p {
     line-height: 10px; }
   body.home .shows h2 {
@@ -253,7 +271,7 @@ body.theband .the-band-page .bio {
   height: 227px;
   width: 300px;
   box-shadow: 10px 10px 5px #888888;
-  background-color: #519cd0; }
+  background-color: #519CD0; }
   body.theband .the-band-page .bio a {
     color: black;
     font-weight: bold; }
@@ -281,9 +299,9 @@ body.theband .the-band-page .modalDialog > div {
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: #fff;
-  background: -moz-linear-gradient(white, #999999);
-  background: -webkit-linear-gradient(white, #999999);
-  background: -o-linear-gradient(white, #999999); }
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999); }
   @media (max-width: 767px) {
     body.theband .the-band-page .modalDialog > div {
       width: 320px; } }
@@ -321,7 +339,7 @@ body.gallery .gallery-container .img-box {
   height: 212px;
   margin-right: 10px;
   padding: 0px;
-  border: 3px solid #519cd0;
+  border: 3px solid #519CD0;
   margin-bottom: 10px; }
   body.gallery .gallery-container .img-box a img {
     width: 268px;
@@ -354,10 +372,10 @@ body.media {
       @media (max-width: 767px) {
         body.media .song-container .song-info {
           width: 325px;
-          border-right: 5px solid #519cd0; } }
+          border-right: 5px solid #519CD0; } }
       body.media .song-container .song-info .content {
-        border: 1px solid #519cd0;
-        border-left: 5px solid #519cd0;
+        border: 1px solid #519CD0;
+        border-left: 5px solid #519CD0;
         border-right: 0px;
         text-align: center;
         padding: 10px 10px 8px; }
@@ -477,3 +495,5 @@ body.shows tr.upcoming {
   background-color: #d9edf7; }
 body.shows tr td {
   vertical-align: middle; }
+
+/*# sourceMappingURL=main.css.map */
