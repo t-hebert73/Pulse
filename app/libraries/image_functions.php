@@ -13,7 +13,7 @@
  * @param $srcFull - source from images folder
  * @return string - html modal formatted image
  */
-function PrintImage($target, $srcThumb, $srcFull){
+function PrintImage($target, $srcThumb, $srcFull, $title){
 
     $image = '<div class="img-box">';
 
@@ -26,7 +26,7 @@ function PrintImage($target, $srcThumb, $srcFull){
     $image .= '<div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">Pulse @ Mahtey, January 30/2015</h4>
+                            <h4 class="modal-title" id="myModalLabel">'.$title.'</h4>
                         </div>
                         <div class="modal-body">
                             <img src="../../images/'.$srcFull.'">
